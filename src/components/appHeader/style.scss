@@ -1,0 +1,62 @@
+span {
+  font-size: 20px;
+}
+.modaltest {
+  width: 100%;
+  height: 100%;
+  background: pink;
+  position: fixed;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  height: 82px;
+  background: #eee;
+  &__wrap {
+    .logo {
+      display: block;
+      float: left;
+      width: 150px;
+      height: auto;
+      background: url('/assets/images/common/icon_swlogo.svg') no-repeat top/100%;
+      transition: width 0.5s, height 0.5s;
+  }
+    .nav {
+      ul {
+        display: flex;
+        li {
+          padding: 0 20px;
+      }
+    }
+      &__search {
+        float: right;
+        ul {
+          display: flex;
+          li{
+            padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+}
+.navHover {
+
+}
+/*.header__wrap {
+  width: 100%;
+  height: auto;
+  background: orange;
+  .logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background:orange;
+    //background: url('/assets/images/common/icon_swlogo.svg') no-repeat top/100%;
+    transition: width 0.5s, height 0.5s;
+    a {
+
+    }
+  }
+}*/

@@ -1,0 +1,50 @@
+span {
+  font-size: 20px; }
+
+.modaltest {
+  width: 100%;
+  height: 100%;
+  background: pink;
+  position: fixed;
+  padding: 20px; }
+
+.header {
+  width: 100%;
+  height: 82px;
+  background: #eee; }
+  .header__wrap .logo {
+    display: block;
+    float: left;
+    width: 150px;
+    height: auto;
+    background: url("/assets/images/common/icon_swlogo.svg") no-repeat top/100%;
+    transition: width 0.5s, height 0.5s; }
+  .header__wrap .nav ul {
+    display: flex; }
+    .header__wrap .nav ul li {
+      padding: 0 20px; }
+  .header__wrap .nav__search {
+    float: right; }
+    .header__wrap .nav__search ul {
+      display: flex; }
+      .header__wrap .nav__search ul li {
+        padding: 0 20px; }
+
+/*.header__wrap {
+  width: 100%;
+  height: auto;
+  background: orange;
+  .logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background:orange;
+    //background: url('/assets/images/common/icon_swlogo.svg') no-repeat top/100%;
+    transition: width 0.5s, height 0.5s;
+    a {
+
+    }
+  }
+}*/
+
+/*# sourceMappingURL=style.css.map */
