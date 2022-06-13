@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="51" viewBox="0 0 36 51">
+    <defs>
+        <filter id="vmjr275o3a" x="0" y="0" width="36" height="51" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="5ifpnrkoob" x="10" y="7" width="16" height="24" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="2" result="blur-2"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="filter:url(#vmjr275o3a)">
+        <g data-name="사각형 12356" transform="translate(6 6)" style="stroke-width:3px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none">
+            <rect width="24" height="39" rx="12" style="stroke:none"/>
+            <rect x="1.5" y="1.5" width="21" height="36" rx="10.5" style="fill:none"/>
+        </g>
+    </g>
+    <g style="filter:url(#5ifpnrkoob)">
+        <g data-name="사각형 12357" style="fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round">
+            <path style="stroke:none" d="M0 0h4v12H0z" transform="translate(16 13)"/>
+            <path style="fill:none" d="M.5.5h3v11h-3z" transform="translate(16 13)"/>
+        </g>
+    </g>
+</svg>

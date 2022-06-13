@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div id="fullpage">
+    <full-page :options="options" id="fullpage" ref="fullpage">
       <div class="section" id="section0">
         <mainVisual />
       </div>
@@ -10,9 +10,11 @@
           <div class="title-kor">새롭게 준비됐어요!</div>
           <a href="#" class="btn-more">더보기</a>
         </div>
+        <!-- s: new product -->
         <div class="new-product__swiper">
           <swiperProduct />
         </div>
+        <!-- e: new product -->
       </div>
       <div class="section" id="section2">
         <div class="section__inner">
@@ -24,6 +26,7 @@
             </div>
             <a href="#" class="btn-more">더보기</a>
           </div>
+          <!-- s: best product -->
           <div class="best-product__list">
             <ul>
               <li>
@@ -161,7 +164,9 @@
               </li>
             </ul>
           </div>
+          <!-- e: best product -->
         </div>
+        <!-- s: banner -->
         <div class="setion__banner">
           <div class="banner__inner">
             <a href="#">
@@ -177,6 +182,7 @@
             </a>
           </div>
         </div>
+        <!-- e: banner -->
       </div>
       <div class="section" id="section3">
         <div class="section__title">
@@ -185,6 +191,7 @@
           <a href="#" class="btn-more">더보기</a>
         </div>
         <div class="section__inner">
+          <!-- s: recommended product -->
           <div class="recom-product__list">
             <ul>
               <li class="sm">
@@ -295,10 +302,12 @@
               </li>
             </ul>
           </div>
+          <!-- e: recommended product -->
         </div>
       </div>
       <div class="section" id="section4">
         <div class="company__content">
+          <!-- s: bi -->
           <div class="content__bi">
             <div class="section__inner">
               <div class="bi-item"><img src="../assets/images/main/bi_swadpia.png" alt=""></div>
@@ -308,6 +317,8 @@
               <div class="bi-item"><img src="../assets/images/main/bi_stayrak.png" alt=""></div>
             </div>
           </div>
+          <!-- e: bi -->
+          <!-- s: news -->
           <div class="content__news">
             <div class="section__inner">
               <div class="news__title">
@@ -322,9 +333,11 @@
               </div>
             </div>
           </div>
+          <!-- e: news -->
+          <app-footer/>
         </div>
       </div>
-    </div>
+    </full-page>
   </div>
 </template>
 
@@ -332,13 +345,34 @@
 import mainVisual from '/pages/mainVisual.vue'
 import swiperProduct from '/pages/swiperProduct.vue'
 import swiperNews from '/pages/swiperNews.vue'
+import appFooter from '/src/components/appFooter/appFooter.vue'
+import FullPage from 'vue-fullpage.js'
+import $ from 'jquery'
 
 export default {
   name: 'mainIndex',
   components: {
     mainVisual,
     swiperProduct,
-    swiperNews
+    swiperNews,
+    appFooter,
+    FullPage
+  },
+  data() {
+    return {
+      options: {
+        menu: '#menu',
+        scrollBar: false,
+        controlArrows: false,
+        navigation:true,
+        navigationPosition:'left',
+        navigationTooltips: ['Home', 'New Product','Best Product','MD Choice',''],
+        showActiveTooltip: true,
+      },
+    }
+  },
+  destroyed() {
+    $.fn.fullpage.destroy('all');
   }
 }
 
