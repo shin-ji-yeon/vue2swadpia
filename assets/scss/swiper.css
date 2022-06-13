@@ -59,7 +59,7 @@
 
 .swiper__visual-text {
   position: absolute;
-  bottom: 512px;
+  top: 207px;
   left: 450px;
   z-index: 999;
   width: 380px;
@@ -82,12 +82,15 @@
   margin-top: 14px;
   font-family: 'Roboto' sans-serif;
   font-size: 30px;
+  line-height: 39px;
   font-weight: 700;
   color: #fff;
 }
 
 .swiper__visual-text .swiper-slide .title {
+  margin-top: 6px;
   font-size: 50px;
+  line-height: 56px;
   font-weight: 700;
   color: #00edff;
   letter-spacing: -2px;
@@ -123,7 +126,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 82px;
 }
 
 .new-product__swiper .swiper-container {
