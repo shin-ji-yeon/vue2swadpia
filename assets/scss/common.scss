@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR', 'Montserrat', sans-serif;
+  font-family: 'Noto Sans KR', 'Roboto', sans-serif;
   height: 100%;
   min-height: 100%;
 }
@@ -22,7 +24,9 @@ p {
   word-wrap: break-word;
 }
 
-button {
+button, input {
+  margin: 0;
+  padding: 0;
   outline: none;
 }
 
@@ -50,7 +54,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   font-size: 100%;
 }
+
 a {
   text-decoration: none;
+  color: inherit;
 }
-
