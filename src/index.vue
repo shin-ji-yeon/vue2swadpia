@@ -26,5 +26,5 @@ export default {
 
 
 <style>
-@import "../assets/scss/common.scss";
+@import "../assets/scss/common.css";
 </style>
