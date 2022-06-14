@@ -62,6 +62,10 @@ span {
       top: 89px;
       right: 135px;
       cursor: pointer;
+      transition: all ease 1s;
+      &:hover {
+        transform: rotate( 180deg );
+      }
     }
     .full-wrap {
       position: relative;
@@ -108,11 +112,13 @@ span {
               img {
                 position: absolute;
                 right: 0;
-                transform: rotate(180deg)
+                transform: rotate(180deg);
+                transition: all 1s;
               }
               .rotate {
                 img {
                   transform: rotate(360deg);
+                  transition: all 1s;
                 }
               }
             }
@@ -120,6 +126,7 @@ span {
               font-size: 16px;
               letter-spacing: -0.28px;
               line-height: 2;
+
             }
             .bullet {
               position: relative;
@@ -200,6 +207,7 @@ span {
               height: 8px;
               background: #9cb2ff;
               opacity: 0.5;
+              transition: all 1s;
             }
             }
 
@@ -254,10 +262,12 @@ span {
           }
         }
         img {
+          transition: all 1s;
           transform: rotate(180deg)
         }
         .rotate {
           img {
+            transition: all 1s;
             transform: rotate(360deg);
           }
         }
@@ -579,12 +589,14 @@ span {
           font-size: 30px;
           letter-spacing: -0.6px;
           line-height: 0.93;
+          animation: fadein .5s;
         }
         p {
           font-size: 18px;
           line-height: 1.44;
           letter-spacing: -0.36px;
           color: #9cb2ff;
+          animation: fadein .5s;
         }
       }
       &--product {
@@ -673,4 +685,12 @@ span {
 .slide-enter, .slide-leave-to {
   overflow: hidden;
   max-height: 0;
+}
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
 }
