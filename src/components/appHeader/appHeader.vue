@@ -2,17 +2,18 @@
   <header>
     <div class="header-content" >
       <div class="header" :class="{none_color: scrollPosition < 50, change_color: scrollPosition > 50}">
-        <div class="header__wrap">
+        <div class="header__wrap" :class="{hover_color:currentTab}">
           <div class="logo">
             <a>
               <span class="blind">성원애드피아 로고</span>
             </a>
           </div>
           <!-- hover area -->
-          <div class="nav tab-box" >
-            <ul class="tab-list">
+          <div class="nav" >
+            <ul>
               <li v-for="(tab, index) in tabList" :key="index" :class="{active:currentTab === index}">
-                <a href="#" @mouseover.prevent="currentTab = index +1">{{ tab }}</a>
+                <a href="#" @mouseover.prevent="currentTab = index +1" >{{ tab }}</a>
+                <span :class="{tabmenu_color:currentTab === index+1}"></span>
               </li>
             </ul>
           </div>
@@ -334,7 +335,8 @@
       </div>
     </div>
     <!--test-->
-    <span class="top-scroll-btn" @click="scrollToTop()"><em class="blind">Top</em></span>
+    <a data-menuanchor="home" href="#home" class="top-scroll-btn"><em class="blind">Top</em></a>
+<!--    <span class="top-scroll-btn" @click="scrollToTop()"><em class="blind">Top</em></span>-->
   </header>
 
 </template>
@@ -348,12 +350,14 @@ export default {
   methods: {
     scrollToTop() {
       window.scrollTo(0,0);
+      console.log (window.scrollY)
     },
     toggleMenu () {
       this.openModal = !this.openModal
     },
     updateScroll(){
       this.scrollPosition = window.scrollY
+      console.log (window.scrollY)
     }
   },
   mounted(){
@@ -1086,7 +1090,8 @@ export default {
 }
 </script>
 <style>
-@import "./style.css";
+
+@import "/assets/scss/appHeader.css";
 @import "/assets/scss/common.css";
 </style>
 <style scoped>

@@ -362,12 +362,23 @@ export default {
     return {
       options: {
         menu: '#menu',
-        scrollBar: false,
+        anchors: ['home', 'newProduct', 'bestProduct','mdChoice', 'footerPage'],
         controlArrows: false,
         navigation:true,
         navigationPosition:'left',
         navigationTooltips: ['Home', 'New Product','Best Product','MD Choice',''],
         showActiveTooltip: true,
+        afterLoad: function (anchorLink, index) {
+          if (index) {
+            $('header').show();
+            $('header .header-content .header').removeClass("change_color");
+            $('header .header-content .header').addClass('none_color');
+          }
+          if(index>=2){
+            $('header .header-content .header').addClass("change_color");
+            $('header .header-content .header').removeClass('none_color');
+          }
+        },
       },
     }
   },
