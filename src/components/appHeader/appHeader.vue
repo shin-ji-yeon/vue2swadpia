@@ -51,26 +51,26 @@
                   <li v-show="quickTab == 1" class="sub-menu submenu01" @mouseleave.prevent="quickTab = 0">
                     <div class="sub-wrap submenu01--list">
                       <ul>
-                        <li><span class="sub-content sub-content--01">menu1</span></li>
-                        <li><span class="sub-content sub-content--02">menu2</span></li>
-                        <li class="sub-on">menu3</li>
+                        <li><span class="sub-content sub-content--01"><p>배송현황1</p></span></li>
+                        <li><span class="sub-content sub-content--02"><p>배송현황2</p></span></li>
+                        <li class="sub-on"><p>배송현황</p></li>
                       </ul>
                     </div>
                   </li>
                   <li v-show="quickTab == 2" class="sub-menu submenu02" @mouseleave.prevent="quickTab = 0">
                     <div class="sub-wrap submenu02--list">
                       <ul>
-                        <li><span class="sub-content sub-content--01">menu1</span></li>
-                        <li><span class="sub-content sub-content--02">menu2</span></li>
-                        <li><span class="sub-content sub-content--02">menu3</span></li>
-                        <li class="sub-on">menu3</li>
+                        <li><span class="sub-content sub-content--01"><p>성원톡1</p></span></li>
+                        <li><span class="sub-content sub-content--02"><p>성원톡2</p></span></li>
+                        <li><span class="sub-content sub-content--02"><p>성원톡3</p></span></li>
+                        <li class="sub-on"><p>성원톡</p></li>
                       </ul>
                     </div>
                   </li>
                   <li v-show="quickTab == 3" class="sub-menu submenu03" @mouseleave.prevent="quickTab = 0">
                     <div class="sub-wrap submenu02--list">
                       <ul>
-                        <li class="sub-on">menu3</li>
+                        <li class="sub-on"><p>1:1상담</p></li>
                       </ul>
                     </div>
                   </li>
@@ -239,7 +239,7 @@
                 <dt @click="row.open01 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open01 = !row.open01">{{ row.term }} <span :class="{rotate:row.open01}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span></dt>
+                <dt @click="row.open01 = !row.open01">{{ row.term }} <span :class="{rotate:row.open01}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open01">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -253,7 +253,7 @@
                 <dt @click="row.open02 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open02 = !row.open02">{{ row.term }} <span :class="{rotate:row.open02}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span></dt>
+                <dt @click="row.open02 = !row.open02">{{ row.term }} <span :class="{rotate:row.open02}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open02">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -267,7 +267,7 @@
                 <dt @click="row.open03 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open03 = !row.open01">{{ row.term }} <span :class="{rotate:row.open03}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span></dt>
+                <dt @click="row.open03 = !row.open01">{{ row.term }} <span :class="{rotate:row.open03}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open03">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -281,7 +281,7 @@
                 <dt @click="row.open04 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open04 = !row.open04">{{ row.term }} <span :class="{rotate:row.open04}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span></dt>
+                <dt @click="row.open04 = !row.open04">{{ row.term }} <span :class="{rotate:row.open04}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open04">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -295,7 +295,7 @@
                 <dt @click="row.open05 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open05 = !row.open05">{{ row.term }} <span :class="{rotate:row.open05}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span></dt>
+                <dt @click="row.open05 = !row.open05">{{ row.term }} <span :class="{rotate:row.open05}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open05">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -309,7 +309,7 @@
                 <dt @click="row.open01 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open06 = !row.open06">{{ row.term }} <span :class="{rotate:row.open06}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span></dt>
+                <dt @click="row.open06 = !row.open06">{{ row.term }} <span :class="{rotate:row.open06}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open06">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -323,7 +323,7 @@
                 <dt @click="row.open07 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open07 = !row.open07">{{ row.term }} <span :class="{rotate:row.open07}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span></dt>
+                <dt @click="row.open07 = !row.open07">{{ row.term }} <span :class="{rotate:row.open07}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open07">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
