@@ -2,10 +2,10 @@
   <div class="visual">
     <!-- s: swiper img -->
     <swiper class="swiper swiper__visual-img" :options="swiperOptionImg" ref="swiperImg">
-      <swiper-slide class="slide-1"><img src="../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
-      <swiper-slide class="slide-2"><img src="../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
-      <swiper-slide class="slide-3"><img src="../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
-      <swiper-slide class="slide-4"><img src="../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-1"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-2"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-3"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-4"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
     <!-- e: swiper img -->
@@ -125,7 +125,7 @@
   }
 </script>
 <style>
-@import "../assets/scss/swiper.css";
+@import "../../assets/scss/swiper.css";
 </style>
 <style lang="scss" scoped>
 </style>

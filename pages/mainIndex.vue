@@ -344,7 +344,7 @@
 </template>
 
 <script>
-import mainVisual from '/pages/mainVisual.vue'
+import mainVisual from '/src/components/mainVisual.vue'
 import swiperProduct from '/pages/swiperProduct.vue'
 import swiperNews from '/pages/swiperNews.vue'
 import appFooter from '/src/components/appFooter/appFooter.vue'
