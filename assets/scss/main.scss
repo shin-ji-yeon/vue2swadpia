@@ -871,3 +871,89 @@
     }
   }
 }
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9;
+  &__content {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 24px;
+    display: flex;
+    align-items: flex-start;
+    &-title {
+      position: relative;
+      padding-right: 45px;
+      margin-right: 44px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 72px;
+        background-color: #8a8a8a;
+      }
+    }
+    &-text {
+      flex: 1;
+      color: #fff;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &-close {
+      margin-top: 3px;
+      display: flex;
+      .close__check {
+        position: relative;
+        padding-left: 26px;
+        .inp-close {
+          position: absolute;
+          top: 2px;
+          left: 3px;
+          width: 15px;
+          height: 15px;
+          border: none;
+          appearance: none;
+          &:checked + .close-text {
+            &:before {
+              background: url(/assets/images/main/ico_chk_on.svg) no-repeat;
+            }
+          }
+        }
+        .close-text {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.83);
+          line-height: 18px;
+          cursor: pointer;
+          vertical-align: top;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            background: url(/assets/images/main/ico_chk_off.svg) no-repeat;
+          }
+        }
+      }
+      .close__btn {
+        margin: 2px 0 0 10px;
+        width: 14px;
+        height: 14px;
+        background: url(/assets/images/main/ico_close.svg) no-repeat;
+        cursor: pointer;
+      }
+    }
+  }
+}
