@@ -338,6 +338,8 @@
         </div>
       </div>
     </full-page>
+    <a data-menuanchor="home" href="#home" class="top-scroll-btn"><em class="blind">Top</em></a>
+    <!-- <span class="top-scroll-btn" @click="scrollToTop()"><em class="blind">Top</em></span> -->
   </div>
 </template>
 

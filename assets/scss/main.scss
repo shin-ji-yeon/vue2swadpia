@@ -879,7 +879,7 @@
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  z-index: 999999;
+  z-index: 9;
   &__content {
     width: 1280px;
     margin: 0 auto;
@@ -949,10 +949,10 @@
       }
       .close__btn {
         margin: 2px 0 0 10px;
-        display: block;
         width: 14px;
         height: 14px;
         background: url(/assets/images/main/ico_close.svg) no-repeat;
+        cursor: pointer;
       }
     }
   }
