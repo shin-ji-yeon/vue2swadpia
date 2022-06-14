@@ -1,4 +1,4 @@
-<template>
+<template class="test">
 
   <div id="app">
     <app-header/>
@@ -20,7 +20,6 @@ export default {
   }
 }
 </script>
-
 
 <style>
 @import "../assets/scss/common.css";
