@@ -47,11 +47,6 @@
   }
 }
 
-#section0 {
-  height: 100vh;
-  overflow: hidden;
-}
-
 .visual {
   position: relative;
   width: 100%;
@@ -59,11 +54,12 @@
 
   .visual__line {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 50%;
-    width: 960px;
-    height: 937px;
+    width: 964px;
+    height: 941px;
     background: url(/assets/images/main/line_bg.svg) no-repeat;
+    background-size: auto 100%;
     z-index: 9;
   }
   .visual__scroll {
@@ -805,7 +801,7 @@
 }
 
 #fp-nav {
-  left: 10px;
+  left: 146px !important;
   &:before {
     position: absolute;
     content: '';
