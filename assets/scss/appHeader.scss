@@ -1,3 +1,5 @@
+
+
 header {
   position: fixed;
   z-index: 99999;
@@ -105,34 +107,51 @@ span {
               letter-spacing: -0.36px;
               line-height: 2;
               cursor: pointer;
+
               span {
                 width: 17px;
                 position: absolute;
                 right: 0;
                 top: 17px;
               }
+
               img {
                 position: absolute;
                 right: 0;
-                transform: rotate(180deg);
+                transform: rotate(0deg);
                 transition: all .5s;
               }
+
               .rotate {
                 img {
-                  transform: rotate(360deg);
+                  transform: rotate(180deg);
                   transition: all .5s;
                 }
               }
+              &.fullActive {
+                color: #00edff;
+              }
             }
             dd {
+              &:hover {
+                color: #00edff;
+              }
+              cursor: pointer;
               font-size: 16px;
               letter-spacing: -0.28px;
               line-height: 2;
 
             }
+            }
+
             .bullet {
               position: relative;
               text-indent: 20px;
+              &:hover {
+                &::before {
+                  background: #00edff;
+                }
+              }
               &::before {
                 width: 2px;
                 height: 2px;
@@ -149,8 +168,6 @@ span {
       }
     }
   }
-
-}
 
 .header-content {
   position: fixed;
@@ -176,6 +193,7 @@ span {
       }
 
       .nav {
+        overflow: hidden;
         ul {
           display: flex;
           li {
@@ -604,45 +622,110 @@ span {
       &--product {
         width: 100%;
         height: auto;
-        padding:42px 151px 17px 42px;
+        padding:42px 80px 17px 42px;
         background: #f5f5f5;
         ul {
-          margin: 0;
-          padding: 0;
           li {
-            margin-bottom: 36px;
-            margin-right: 30px;
-            float:left;
-            min-width: 254px;
-            height: 74px;
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            a {
-              text-decoration: none;
-            }
-            .category_product {
-              display: flex;
-              border-radius: 12px;
-              padding-right: 15px;
-              width: 100%;
-              height: 74px;
-              figure {
-                margin-right: 23px;
-                width: 92px;
-                height: 100%;
-                img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+
+            .accordions {
+              float: left;
+              position: relative;
+              margin-right: 30px;
+              margin-bottom: 20px;
+              width: 17%;
+              dl {
+                dt {
+                  &.border {
+                    box-sizing: border-box;
+                    border: 2px solid #3557da;
+                    strong {
+                      color: #3557da;
+                    }
+                  }
+
+                  position: relative;
+                  text-indent: 50px;
+                  //min-width: 254px;
+                  height: 74px;
+                  line-height: 74px;
+                  font-size: 18px;
+                  letter-spacing: -0.36px;
+                  cursor: pointer;
+                  border-radius: 12px;
+                  background: #fff;
+                  overflow: hidden;
+                  figure {
+                   img {
+                     position: absolute;
+                     left: 0;
+                     height: 100%;
+                     width: 92px;
+
+                   }
+                  }
+                  strong {
+                    display: block;
+                    text-indent: 100px;
+                  }
+                  .drop-down {
+                    width: 17px;
+                    position: absolute;
+                    right: 16px;
+                    top: 35px;
+                  }
+                  img {
+                    position: absolute;
+                    right: 16px;
+                    transform: rotate(0deg);
+                    transition: all .5s;
+                  }
+
+                  .rotate {
+                    img {
+                      transform: rotate(180deg);
+                      transition: all .5s;
+                    }
+                  }
                 }
-              }
-              h3 {
-                font-weight: bold;
-                font-size: 18px;
-                letter-spacing: -0.36px;
-                line-height: 74px;
-                color: #373a3c;
+                dd {
+                  cursor: pointer;
+                  color: #4c4c4c;
+                  font-size: 18px;
+                  letter-spacing: -0.28px;
+                  line-height: 2;
+
+                }
+                .bullet {
+                  position: relative;
+                  text-indent: 20px;
+                  span {
+                    position: relative;
+                    &:hover {
+                      color: #3557da;
+                      &::before {
+                        position: absolute;
+                        width: 100%;
+                        height: 7px;
+                        content: '';
+                        background: #d5d7ff;
+                        opacity: 0.5;
+                        bottom: -2px;
+                        transform: translate(0, -50%);
+                      }
+                    }
+                  }
+                  &::before {
+                    position: absolute;
+                    left: 10px;
+                    width: 5px;
+                    height: 5px;
+                    content: '';
+                    background: #4c4c4c;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    border-radius: 50%;
+                  }
+                }
               }
             }
           }
