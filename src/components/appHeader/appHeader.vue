@@ -4,7 +4,7 @@
       <div class="header" :class="{none_color: scrollPosition < 50, change_color: scrollPosition > 50}">
         <div class="header__wrap" :class="{hover_color:currentTab}">
           <div class="logo">
-            <a>
+            <a href="#">
               <span class="blind">성원애드피아 로고</span>
             </a>
           </div>
@@ -90,15 +90,27 @@
           </div>
           <div class="nav__hoverTab--product">
             <ul>
-              <li v-for="(info, index) in typeInfo01" :key="index">
-                <a href="#">
-                  <div class="category_product">
-                    <figure>
-                      <img :src="info.product.img" :alt="info.product.alt">
-                    </figure>
-                    <h3>{{ info.product.title }}</h3>
-                  </div>
-                </a>
+              <li>
+                <div class="accordions" v-for="(row, index) in navList01" :key="index">
+                  <dl v-if="row.only == true">
+                    <dt class="subtitle">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong>
+                    </dt>
+                  </dl>
+                  <dl v-else>
+                    <dt class="subtitle" :class="{border:row.open01}" @click="row.open01 = !row.open01">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong> <span class="drop-down" :class="{rotate:row.open01}"><img src="../../../assets/images/common/icon_dropdown_blue.svg" alt="검색"></span></dt>
+                    <template v-if="row.open01">
+                      <dd class="bullet" v-for="(item,index) in row.items" :key="index"><span>{{ item.text }}</span><em class="tabmenu_color"></em></dd>
+                    </template>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -110,15 +122,27 @@
           </div>
           <div class="nav__hoverTab--product">
             <ul>
-              <li v-for="(info, index) in typeInfo02" :key="index">
-                <a href="#">
-                  <div class="category_product">
-                    <figure>
-                      <img :src="info.product.img" :alt="info.product.alt">
-                    </figure>
-                    <h3>{{ info.product.title }}</h3>
-                  </div>
-                </a>
+              <li>
+                <div class="accordions" v-for="(row, index) in navList02" :key="index">
+                  <dl v-if="row.only == true">
+                    <dt class="subtitle">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong>
+                    </dt>
+                  </dl>
+                  <dl v-else>
+                    <dt class="subtitle" :class="{border:row.open02}" @click="row.open02 = !row.open02">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong> <span class="drop-down" :class="{rotate:row.open02}"><img src="../../../assets/images/common/icon_dropdown_blue.svg" alt="검색"></span></dt>
+                    <template v-if="row.open02">
+                      <dd class="bullet" v-for="(item,index) in row.items" :key="index"><span>{{ item.text }}</span><em class="tabmenu_color"></em></dd>
+                    </template>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -130,15 +154,27 @@
           </div>
           <div class="nav__hoverTab--product">
             <ul>
-              <li v-for="(info, index) in typeInfo03" :key="index">
-                <a href="#">
-                  <div class="category_product">
-                    <figure>
-                      <img :src="info.product.img" :alt="info.product.alt">
-                    </figure>
-                    <h3>{{ info.product.title }}</h3>
-                  </div>
-                </a>
+              <li>
+                <div class="accordions" v-for="(row, index) in navList03" :key="index">
+                  <dl v-if="row.only == true">
+                    <dt class="subtitle">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong>
+                    </dt>
+                  </dl>
+                  <dl v-else>
+                    <dt class="subtitle" :class="{border:row.open03}" @click="row.open02 = !row.open03">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong> <span class="drop-down" :class="{rotate:row.open03}"><img src="../../../assets/images/common/icon_dropdown_blue.svg" alt="검색"></span></dt>
+                    <template v-if="row.open03">
+                      <dd class="bullet" v-for="(item,index) in row.items" :key="index"><span>{{ item.text }}</span><em class="tabmenu_color"></em></dd>
+                    </template>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -150,15 +186,27 @@
           </div>
           <div class="nav__hoverTab--product">
             <ul>
-              <li v-for="(info, index) in typeInfo04" :key="index">
-                <a href="#">
-                  <div class="category_product">
-                    <figure>
-                      <img :src="info.product.img" :alt="info.product.alt">
-                    </figure>
-                    <h3>{{ info.product.title }}</h3>
-                  </div>
-                </a>
+              <li>
+                <div class="accordions" v-for="(row, index) in navList04" :key="index">
+                  <dl v-if="row.only == true">
+                    <dt class="subtitle">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong>
+                    </dt>
+                  </dl>
+                  <dl v-else>
+                    <dt class="subtitle" :class="{border:row.open04}" @click="row.open04 = !row.open04">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong> <span class="drop-down" :class="{rotate:row.open04}"><img src="../../../assets/images/common/icon_dropdown_blue.svg" alt="검색"></span></dt>
+                    <template v-if="row.open04">
+                      <dd class="bullet" v-for="(item,index) in row.items" :key="index"><span>{{ item.text }}</span><em class="tabmenu_color"></em></dd>
+                    </template>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -170,15 +218,27 @@
           </div>
           <div class="nav__hoverTab--product">
             <ul>
-              <li v-for="(info, index) in typeInfo05" :key="index">
-                <a href="#">
-                  <div class="category_product">
-                    <figure>
-                      <img :src="info.product.img" :alt="info.product.alt">
-                    </figure>
-                    <h3>{{ info.product.title }}</h3>
-                  </div>
-                </a>
+              <li>
+                <div class="accordions" v-for="(row, index) in navList05" :key="index">
+                  <dl v-if="row.only == true">
+                    <dt class="subtitle">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong>
+                    </dt>
+                  </dl>
+                  <dl v-else>
+                    <dt class="subtitle" :class="{border:row.open05}" @click="row.open05 = !row.open05">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong> <span class="drop-down" :class="{rotate:row.open05}"><img src="../../../assets/images/common/icon_dropdown_blue.svg" alt="검색"></span></dt>
+                    <template v-if="row.open05">
+                      <dd class="bullet" v-for="(item,index) in row.items" :key="index"><span>{{ item.text }}</span><em class="tabmenu_color"></em></dd>
+                    </template>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -190,15 +250,27 @@
           </div>
           <div class="nav__hoverTab--product">
             <ul>
-              <li v-for="(info, index) in typeInfo06" :key="index">
-                <a href="#">
-                  <div class="category_product">
-                    <figure>
-                      <img :src="info.product.img" :alt="info.product.alt">
-                    </figure>
-                    <h3>{{ info.product.title }}</h3>
-                  </div>
-                </a>
+              <li>
+                <div class="accordions" v-for="(row, index) in navList06" :key="index">
+                  <dl v-if="row.only == true">
+                    <dt class="subtitle">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong>
+                    </dt>
+                  </dl>
+                  <dl v-else>
+                    <dt class="subtitle" :class="{border:row.open06}" @click="row.open06 = !row.open06">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong> <span class="drop-down" :class="{rotate:row.open06}"><img src="../../../assets/images/common/icon_dropdown_blue.svg" alt="검색"></span></dt>
+                    <template v-if="row.open06">
+                      <dd class="bullet" v-for="(item,index) in row.items" :key="index"><span>{{ item.text }}</span><em class="tabmenu_color"></em></dd>
+                    </template>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -210,15 +282,27 @@
           </div>
           <div class="nav__hoverTab--product">
             <ul>
-              <li v-for="(info, index) in typeInfo07" :key="index">
-                <a href="#">
-                  <div class="category_product">
-                    <figure>
-                      <img :src="info.product.img" :alt="info.product.alt">
-                    </figure>
-                    <h3>{{ info.product.title }}</h3>
-                  </div>
-                </a>
+              <li>
+                <div class="accordions" v-for="(row, index) in navList07" :key="index">
+                  <dl v-if="row.only == true">
+                    <dt class="subtitle">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong>
+                    </dt>
+                  </dl>
+                  <dl v-else>
+                    <dt class="subtitle" :class="{border:row.open07}" @click="row.open07 = !row.open07">
+                      <figure>
+                        <img :src="row.img" :alt="row.alt">
+                      </figure>
+                      <strong>{{ row.term }}</strong> <span class="drop-down" :class="{rotate:row.open07}"><img src="../../../assets/images/common/icon_dropdown_blue.svg" alt="검색"></span></dt>
+                    <template v-if="row.open07">
+                      <dd class="bullet" v-for="(item,index) in row.items" :key="index"><span>{{ item.text }}</span><em class="tabmenu_color"></em></dd>
+                    </template>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -239,7 +323,7 @@
                 <dt @click="row.open01 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open01 = !row.open01">{{ row.term }} <span :class="{rotate:row.open01}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
+                <dt @click="row.open01 = !row.open01" :class="{fullActive:row.open01}">{{ row.term }} <span :class="{rotate:row.open01}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open01">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -249,11 +333,11 @@
           <div class="full-wrap__section">
             <h3 class="title">판촉물</h3>
             <div class="accordions" v-for="(row, index) in fullList02" :key="index">
-              <dl v-if="row.only == true">
+              <dl v-if="row.only == true" >
                 <dt @click="row.open02 = !row.open">{{ row.term }}</dt>
               </dl>
-              <dl v-else>
-                <dt @click="row.open02 = !row.open02">{{ row.term }} <span :class="{rotate:row.open02}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
+              <dl v-else >
+                <dt @click="row.open02 = !row.open02" :class="{fullActive:row.open02}">{{ row.term }} <span :class="{rotate:row.open02}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open02">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -267,7 +351,7 @@
                 <dt @click="row.open03 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open03 = !row.open01">{{ row.term }} <span :class="{rotate:row.open03}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
+                <dt @click="row.open03 = !row.open03" :class="{fullActive:row.open03}">>{{ row.term }} <span :class="{rotate:row.open03}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open03">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -281,7 +365,7 @@
                 <dt @click="row.open04 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open04 = !row.open04">{{ row.term }} <span :class="{rotate:row.open04}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
+                <dt @click="row.open04 = !row.open04" :class="{fullActive:row.open04}">>{{ row.term }} <span :class="{rotate:row.open04}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open04">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -295,7 +379,7 @@
                 <dt @click="row.open05 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open05 = !row.open05">{{ row.term }} <span :class="{rotate:row.open05}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
+                <dt @click="row.open05 = !row.open05" :class="{fullActive:row.open05}">{{ row.term }} <span :class="{rotate:row.open05}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open05">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -309,7 +393,7 @@
                 <dt @click="row.open01 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open06 = !row.open06">{{ row.term }} <span :class="{rotate:row.open06}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
+                <dt @click="row.open06 = !row.open06" :class="{fullActive:row.open06}">{{ row.term }} <span :class="{rotate:row.open06}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open06">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -323,7 +407,7 @@
                 <dt @click="row.open07 = !row.open">{{ row.term }}</dt>
               </dl>
               <dl v-else>
-                <dt @click="row.open07 = !row.open07">{{ row.term }} <span :class="{rotate:row.open07}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
+                <dt @click="row.open07 = !row.open07" :class="{fullActive:row.open07}">{{ row.term }} <span :class="{rotate:row.open07}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
                 <template v-if="row.open07">
                   <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
                 </template>
@@ -356,7 +440,8 @@ export default {
     updateScroll(){
       this.scrollPosition = window.scrollY
       console.log (window.scrollY)
-    }
+    },
+
   },
   mounted(){
     window.addEventListener('scroll', this.updateScroll);
@@ -368,7 +453,6 @@ export default {
     return {
       fullToggle: false,
       scrollPosition: null,
-      quickSub: false,
       quickShow:false,
       openModal: false,
       currentTab: 0,
@@ -402,390 +486,276 @@ export default {
           }
         }
       ],
-      typeInfo01: [
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+      //nav data
+      navList01: {
+        item1: {
+          term: '일반명함',
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          open01: false,
+          items: [
+            {
+              text: '초저가 전단지',
+            },
+            {
+              text: '초저가 접지 전단지',
+            },
+            {
+              text: '랑데부 실속 접지 전단지',
+            },
+            {
+              text: '문어발 전단지',
+            },
+          ]
         },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item2: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '컷팅명함',
+          open01: false,
+          items: [
+            {
+              text: 'test1',
+            },
+            {
+              text: 'test2',
+            },
+            {
+              text: 'test3',
+            },
+            {
+              text: 'test4',
+            },
+          ]
         },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
+        item3: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item4: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '하이브리드 명함',
+          only: true
         },
-        {
-          product: {
-            title: '하이브리드 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item5: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '하이브리드 명함',
+          only: true
         },
-        {
-          product: {
-            title: '하이브리드 하이브리드 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+      },
+      navList02: {
+        item1: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item2: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '컷팅명함',
+          open02: false,
+          items: [
+            {
+              text: 'test1',
+            },
+            {
+              text: 'test2',
+            },
+            {
+              text: 'test3',
+            },
+            {
+              text: 'test4',
+            },
+          ]
         },
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        }
-
-      ],
-      typeInfo02: [
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item3: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item4: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '하이브리드 명함',
+          only: true
         },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+      },
+      navList03: {
+        item1: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
-      ],
-      typeInfo03: [
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item2: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item3: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item4: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '하이브리드 명함',
+          only: true
         },
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+      },
+      navList04: {
+        item1: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item2: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '컷팅명함2',
+          open04: false,
+          items: [
+            {
+              text: 'test1',
+            },
+            {
+              text: 'test2',
+            },
+            {
+              text: 'test3',
+            },
+            {
+              text: 'test4',
+            },
+          ]
         },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-      ],
-      typeInfo04: [
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '하이브리드 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '하이브리드 하이브리드 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        }
-
-      ],
-      typeInfo05: [
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-      ],
-      typeInfo06: [
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-      ],
-      typeInfo07: [
-        {
-          product: {
-            title: '일반명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '컷팅명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
-        },
-        {
-          product: {
-            title: '볼록코팅 명함',
-            img: require("../../../assets/images/dummy/img_header_icon.png"),
-            alt: '일반명함',
-          },
-
+        item3: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
         },
 
-      ],
+      },
+      navList05: {
+        item1: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
+        },
+        item2: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '컷팅명함',
+          open05: false,
+          items: [
+            {
+              text: 'test1',
+            },
+            {
+              text: 'test2',
+            },
+            {
+              text: 'test3',
+            },
+            {
+              text: 'test4',
+            },
+          ]
+        },
+        item3: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
+        },
+        item4: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '하이브리드 명함',
+          only: true
+        },
+      },
+      navList06: {
+        item1: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
+        },
+        item2: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '컷팅명함',
+          open06: false,
+          items: [
+            {
+              text: 'test1',
+            },
+            {
+              text: 'test2',
+            },
+            {
+              text: 'test3',
+            },
+            {
+              text: 'test4',
+            },
+          ]
+        },
+        item3: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
+        },
+        item4: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '하이브리드 명함',
+          only: true
+        },
+      },
+      navList07: {
+        item1: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '블록코팅 명함',
+          only: true
+        },
+        item2: {
+          img: require("../../../assets/images/dummy/img_header_icon.png"),
+          alt: '퀵 아이콘',
+          term: '컷팅명함',
+          open07: false,
+          items: [
+            {
+              text: 'test1',
+            },
+            {
+              text: 'test2',
+            },
+            {
+              text: 'test3',
+            },
+            {
+              text: 'test4',
+            },
+          ]
+        },
+      },
       groups: [
         {
           img: require("../../../assets/images/dummy/icon_dummy.svg"),
