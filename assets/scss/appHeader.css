@@ -239,7 +239,8 @@ span {
           padding: 35px 0;
           background: #4d6ee4;
           width: 48px;
-          border-radius: 40px; }
+          border-radius: 40px;
+          box-shadow: -3px 2px 5px 0 rgba(0, 0, 0, 0.2); }
         .header-content .header .quick-content .quickList .quick-sub {
           position: absolute;
           top: 0; }
@@ -311,6 +312,7 @@ span {
                     height: 30px;
                     width: 30px;
                     background-image: url("/assets/images/dummy/icon_dummy_on.svg");
+                    fill: orange;
                     background-size: 30px;
                     background-repeat: no-repeat;
                     background-position: right; }
@@ -498,6 +500,7 @@ span {
               box-sizing: border-box;
               border: 2px solid #3557da; }
               .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt.border strong {
+                font-size: 18px;
                 color: #3557da; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt figure img {
               position: absolute;
@@ -530,6 +533,7 @@ span {
             position: relative;
             text-indent: 20px; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl .bullet span {
+              font-size: 18px;
               position: relative; }
               .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl .bullet span:hover {
                 color: #3557da; }
