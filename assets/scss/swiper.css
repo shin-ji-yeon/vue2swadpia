@@ -61,8 +61,8 @@
   position: absolute;
   top: 207px;
   left: 450px;
+  width: 390px;
   z-index: 999;
-  width: 380px;
 }
 
 .swiper__visual-text .swiper-slide {
@@ -91,9 +91,9 @@
   margin-top: 6px;
   font-size: 50px;
   line-height: 56px;
-  font-weight: 700;
   color: #00edff;
   letter-spacing: -2px;
+  font-family: 'GongGothicM';
 }
 
 .swiper__visual-text .swiper-slide .text {
@@ -104,6 +104,15 @@
   line-height: 29px;
   color: #9cb2ff;
   letter-spacing: -0.6px;
+}
+
+.swiper__visual-text .swiper-slide .text span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.swiper__visual-text .swiper-slide .text span.ml20 {
+  margin-left: 20px;
 }
 
 .swiper__visual-text .swiper-slide-active {
@@ -126,7 +135,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 82px;
+  padding-top: 130px;
 }
 
 .new-product__swiper .swiper-container {

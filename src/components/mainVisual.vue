@@ -2,10 +2,10 @@
   <div class="visual">
     <!-- s: swiper img -->
     <swiper class="swiper swiper__visual-img" :options="swiperOptionImg" ref="swiperImg">
-      <swiper-slide class="slide-1"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
-      <swiper-slide class="slide-2"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
-      <swiper-slide class="slide-3"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
-      <swiper-slide class="slide-4"><img src="../../assets/images/main/main_bgimg01.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-1"><img src="../../assets/images/main/main_bgimg_01.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-2"><img src="../../assets/images/main/main_bgimg_02.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-3"><img src="../../assets/images/main/main_bgimg_03.jpg" alt=""></swiper-slide>
+      <swiper-slide class="slide-4"><img src="../../assets/images/main/main_bgimg_04.jpg" alt=""></swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
     <!-- e: swiper img -->
@@ -17,35 +17,43 @@
           <div class="sub-title">Hello! Summer</div>
           <div class="title">여름맞이 시즌상품</div>
           <div class="text">
-            #부채 초소량 제작가능 #다용도PP<br />
-            #시원한 여름준비 #여름 판촉을 부탁해!
+            <span>#부채 초소량 제작가능</span>
+            <span class="ml20">#다용도PP</span>
+            <span>#시원한 여름준비</span>
+            <span class="ml20">#여름 판촉을 부탁해!</span>
           </div>
         </swiper-slide>
         <swiper-slide class="slide-2">
           <a href="" class="btn"><span class="blind">자세히보기</span></a>
-          <div class="sub-title">Hello! Summer</div>
-          <div class="title">여름맞이 시즌상품</div>
+          <div class="sub-title">내가 원하는데로!</div>
+          <div class="title">모양 포스트잇 4종</div>
           <div class="text">
-            #부채 초소량 제작가능 #다용도PP<br />
-            #시원한 여름준비 #여름 판촉을 부탁해!
+            <span>#판촉물</span>
+            <span class="ml20">#모양선택 제작가능</span>
+            <span>#나만의 포스트잇</span>
+            <span class="ml20">#신제품출시</span>
           </div>
         </swiper-slide>
         <swiper-slide class="slide-3">
           <a href="" class="btn"><span class="blind">자세히보기</span></a>
-          <div class="sub-title">Hello! Summer</div>
-          <div class="title">여름맞이 시즌상품</div>
+          <div class="sub-title">직접 디자인한</div>
+          <div class="title">내 마음을 담은 봉투</div>
           <div class="text">
-            #부채 초소량 제작가능 #다용도PP<br />
-            #시원한 여름준비 #여름 판촉을 부탁해!
+            <span>#엽서 한장</span>
+            <span class="ml20">#인쇄의 모든것</span>
+            <span>#다양한 선택</span>
+            <span class="ml20">#디지털인쇄</span>
           </div>
         </swiper-slide>
         <swiper-slide class="slide-4">
           <a href="" class="btn"><span class="blind">자세히보기</span></a>
-          <div class="sub-title">Hello! Summer</div>
-          <div class="title">여름맞이 시즌상품</div>
+          <div class="sub-title">국민인쇄! 인쇄 유토피아!</div>
+          <div class="title">대표인쇄 명함성지</div>
           <div class="text">
-            #부채 초소량 제작가능 #다용도PP<br />
-            #시원한 여름준비 #여름 판촉을 부탁해!
+            <span>#상업인쇄</span>
+            <span class="ml20">#비즈니스 첫걸음</span>
+            <span>#인쇄의 모든것</span>
+            <span class="ml20">#대표인쇄 명함</span>
           </div>
         </swiper-slide>
       </swiper>
