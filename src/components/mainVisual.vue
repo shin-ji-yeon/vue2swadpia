@@ -25,7 +25,7 @@
         </swiper-slide>
         <swiper-slide class="slide-2">
           <a href="" class="btn"><span class="blind">자세히보기</span></a>
-          <div class="sub-title">내가 원하는데로!</div>
+          <div class="sub-title">내가 원하는대로!</div>
           <div class="title">모양 포스트잇 4종</div>
           <div class="text">
             <span>#판촉물</span>
