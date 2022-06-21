@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
+@font-face {
+	font-family: 'GongGothicM';
+	src: url('/assets/fonts/GongGothic_Medium.eot');
+	src: url("/assets/fonts/GongGothic_Medium.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/GongGothic_Medium.woff") format("woff"),
+       url("/assets/fonts/GongGothic_Medium.woff2") format("woff2"),
+       url("/assets/fonts/GongGothic_Medium.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;

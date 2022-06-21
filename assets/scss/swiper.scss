@@ -50,8 +50,8 @@
   position: absolute;
   top: 207px;
   left: 450px;
+  width: 390px;
   z-index: 999;
-  width: 380px;
   .swiper-slide {
     opacity: 0;
     transition: opacity 500ms;
@@ -73,9 +73,9 @@
       margin-top: 6px;
       font-size: 50px;
       line-height: 56px;
-      font-weight: 700;
       color: #00edff;
       letter-spacing: -2px;
+      font-family: 'GongGothicM';
     }
     .text {
       margin-top: 20px;
@@ -85,6 +85,13 @@
       line-height: 29px;
       color: #9cb2ff;
       letter-spacing: -0.6px;
+      span {
+        display: inline-block;
+        vertical-align: top;
+        &.ml20 {
+          margin-left: 20px;
+        }
+      }
     }
   }
   .swiper-slide-active {
@@ -100,7 +107,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 82px;
+  // padding-top: 82px;
+  padding-top: 130px;
   .swiper-container {
     width: 480px;
     overflow: visible;

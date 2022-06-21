@@ -32,7 +32,7 @@
               <li>
                 <a href="">
                   <div class="best-product__img">
-                    <div class="img"><img src="../assets/images/main/product_img01.jpg" alt="" /></div>
+                    <div class="img"><img src="../assets/images/main/best_product_01.jpg" alt="" /></div>
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
@@ -51,7 +51,7 @@
               <li>
                 <a href="">
                   <div class="best-product__img">
-                    <div class="img"><img src="../assets/images/main/product_img01.jpg" alt="" /></div>
+                    <div class="img"><img src="../assets/images/main/best_product_02.jpg" alt="" /></div>
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
@@ -70,7 +70,45 @@
               <li>
                 <a href="">
                   <div class="best-product__img">
-                    <div class="img"><img src="../assets/images/main/product_img01.jpg" alt="" /></div>
+                    <div class="img"><img src="../assets/images/main/best_product_03.jpg" alt="" /></div>
+                    <div class="more">자세히보기</div>
+                  </div>
+                  <div class="best-product__content">
+                    <div class="title">고급 초대장</div>
+                    <div class="text">다채로운 재질의 고품격 초대장</div>
+                    <div class="detail">
+                      <div class="info">
+                        <span>237x167</span>
+                        <span>300매</span>
+                      </div>
+                      <div class="price">66,000원</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="best-product__img">
+                    <div class="img"><img src="../assets/images/main/best_product_04.jpg" alt="" /></div>
+                    <div class="more">자세히보기</div>
+                  </div>
+                  <div class="best-product__content">
+                    <div class="title">도무송형 스티커</div>
+                    <div class="text">다양하고 개성적인 모양과 크기</div>
+                    <div class="detail">
+                      <div class="info">
+                        <span>35x50</span>
+                        <span>1000매</span>
+                      </div>
+                      <div class="price">10,230원</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="best-product__img">
+                    <div class="img"><img src="../assets/images/main/best_product_05.jpg" alt="" /></div>
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
@@ -89,18 +127,18 @@
               <li>
                 <a href="">
                   <div class="best-product__img">
-                    <div class="img"><img src="../assets/images/main/product_img01.jpg" alt="" /></div>
+                    <div class="img"><img src="../assets/images/main/best_product_06.jpg" alt="" /></div>
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
-                    <div class="title">고급 명함지</div>
-                    <div class="text">가장 기본적이며 실용성의 명함</div>
+                    <div class="title">포스터</div>
+                    <div class="text">다양한 규격의 디지털 소량인쇄</div>
                     <div class="detail">
                       <div class="info">
-                        <span>90x50</span>
-                        <span>1000매</span>
+                        <span>210x297</span>
+                        <span>2매</span>
                       </div>
-                      <div class="price">5,940원</div>
+                      <div class="price">2,310원</div>
                     </div>
                   </div>
                 </a>
@@ -108,56 +146,18 @@
               <li>
                 <a href="">
                   <div class="best-product__img">
-                    <div class="img"><img src="../assets/images/main/product_img01.jpg" alt="" /></div>
+                    <div class="img"><img src="../assets/images/main/best_product_07.jpg" alt="" /></div>
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
-                    <div class="title">고급 명함지</div>
-                    <div class="text">가장 기본적이며 실용성의 명함</div>
+                    <div class="title">대/중/소 봉투</div>
+                    <div class="text">가장 기본적이며 실용성의 봉투</div>
                     <div class="detail">
                       <div class="info">
-                        <span>90x50</span>
-                        <span>1000매</span>
+                        <span>330x245</span>
+                        <span>500매</span>
                       </div>
-                      <div class="price">5,940원</div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div class="best-product__img">
-                    <div class="img"><img src="../assets/images/main/product_img01.jpg" alt="" /></div>
-                    <div class="more">자세히보기</div>
-                  </div>
-                  <div class="best-product__content">
-                    <div class="title">고급 명함지</div>
-                    <div class="text">가장 기본적이며 실용성의 명함</div>
-                    <div class="detail">
-                      <div class="info">
-                        <span>90x50</span>
-                        <span>1000매</span>
-                      </div>
-                      <div class="price">5,940원</div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div class="best-product__img">
-                    <div class="img"><img src="../assets/images/main/product_img01.jpg" alt="" /></div>
-                    <div class="more">자세히보기</div>
-                  </div>
-                  <div class="best-product__content">
-                    <div class="title">고급 명함지</div>
-                    <div class="text">가장 기본적이며 실용성의 명함</div>
-                    <div class="detail">
-                      <div class="info">
-                        <span>90x50</span>
-                        <span>1000매</span>
-                      </div>
-                      <div class="price">5,940원</div>
+                      <div class="price">63,800원</div>
                     </div>
                   </div>
                 </a>
@@ -197,7 +197,7 @@
               <li class="sm">
                 <a href="">
                   <div class="recom-product__img">
-                    <img src="../assets/images/main/product_img01.jpg" alt="" />
+                    <img src="../assets/images/main/md_choice_small_01.jpg" alt="" />
                   </div>
                   <div class="recom-product__rank">
                     <div class="rank-num">02</div>
@@ -219,15 +219,15 @@
               <li class="sm">
                 <a href="">
                   <div class="recom-product__img">
-                    <img src="../assets/images/main/product_img01.jpg" alt="" />
+                    <img src="../assets/images/main/md_choice_small_02.jpg" alt="" />
                   </div>
                   <div class="recom-product__rank">
                     <div class="rank-num">03</div>
                     <div class="rank-name">best</div>
                   </div>
                   <div class="recom-product__content">
-                    <div class="title">홍보물 책자</div>
-                    <div class="tag">#디지털 #홍보용 #토너 #인디고</div>
+                    <div class="title">안내형 봉투</div>
+                    <div class="tag">#봉투 #안내장 #내지 #모조지</div>
                     <div class="detail">
                       <div class="info">
                         <span>삼각사이즈230x165</span>
@@ -241,11 +241,11 @@
               <li class="big">
                 <a href="">
                   <div class="recom-product__img">
-                    <img src="../assets/images/main/product_img01.jpg" alt="" />
+                    <img src="../assets/images/main/md_choice_big.jpg" alt="" />
                   </div>
                   <div class="recom-product__content">
                     <div class="tag">#디지털 #카달로그 #브로셔 #인디고인쇄</div>
-                    <div class="title">디지털 카달로그·브로셔</div>
+                    <div class="title">디지털 카달로그 / 브로셔</div>
                   </div>
                   <div class="recom-product__detail">
                     <div class="info">
@@ -259,15 +259,15 @@
               <li class="sm">
                 <a href="">
                   <div class="recom-product__img">
-                    <img src="../assets/images/main/product_img01.jpg" alt="" />
+                    <img src="../assets/images/main/md_choice_small_03.jpg" alt="" />
                   </div>
                   <div class="recom-product__rank">
                     <div class="rank-num">04</div>
                     <div class="rank-name">best</div>
                   </div>
                   <div class="recom-product__content">
-                    <div class="title">홍보물 책자</div>
-                    <div class="tag">#디지털 #홍보용 #토너 #인디고</div>
+                    <div class="title">디지털 캘린더</div>
+                    <div class="tag">#디지털 #캘린더 #브로셔 #인디고인쇄</div>
                     <div class="detail">
                       <div class="info">
                         <span>삼각사이즈230x165</span>
@@ -281,15 +281,15 @@
               <li class="sm">
                 <a href="">
                   <div class="recom-product__img">
-                    <img src="../assets/images/main/product_img01.jpg" alt="" />
+                    <img src="../assets/images/main/md_choice_small_04.jpg" alt="" />
                   </div>
                   <div class="recom-product__rank">
                     <div class="rank-num">05</div>
                     <div class="rank-name">best</div>
                   </div>
                   <div class="recom-product__content">
-                    <div class="title">홍보물 책자</div>
-                    <div class="tag">#디지털 #홍보용 #토너 #인디고</div>
+                    <div class="title">디지털 책자</div>
+                    <div class="tag">#디지털 #홍보용 #토너인쇄 #책자</div>
                     <div class="detail">
                       <div class="info">
                         <span>삼각사이즈230x165</span>

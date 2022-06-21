@@ -1,51 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
+@font-face {
+  font-family: 'GongGothicM';
+  src: url("/assets/fonts/GongGothic_Medium.eot");
+  src: url("/assets/fonts/GongGothic_Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GongGothic_Medium.woff") format("woff"), url("/assets/fonts/GongGothic_Medium.woff2") format("woff2"), url("/assets/fonts/GongGothic_Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', 'Roboto', sans-serif;
   height: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+}
 
 body {
   -webkit-text-size-adjust: none;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+}
 
 .blind {
   display: inline-block;
   overflow: hidden;
-  text-indent: -9999%; }
+  text-indent: -9999%;
+}
 
 p {
   word-break: keep-all;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
 button {
-  outline: none; }
+  outline: none;
+}
 
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 60px; }
+  padding: 0 60px;
+}
 
 button, figure, p {
   margin: 0;
   padding: 0;
   border: 0;
-  background: none; }
+  background: none;
+}
 
 ul, ol, dl, dt, dd, li {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 a {
   text-decoration: none;
-  color: inherit; }
-
+  color: inherit;
+}
 /*# sourceMappingURL=common.css.map */
