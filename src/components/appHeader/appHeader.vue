@@ -29,15 +29,15 @@
         </div>
         <!-- quick area -->
         <div class="quick-content">
-          <div class="quickNav" @click="quickShow = !quickShow"><span class="quick-title">Quick Menu</span>
-              <span :class="{rotate:quickShow}"><img src="../../../assets/images/common/icon_btn_top.svg" alt="검색"></span>
+          <div class="quickNav" @click="quickShow = !quickShow"><span class="quick-title">QUICK <em>SERVICE</em></span>
+              <span class="quickBtn" :class="{rotate:quickShow}"><img src="../../../assets/images/common/quick-arrow.svg" alt="검색"></span>
             </div>
           <!--menu-->
           <transition name="slide">
             <div class="quickList" v-if="quickShow" >
               <div class="quick-main">
                 <ul>
-                  <li v-for="(quickMain, index) in mainMenu" :key="index" :class="{active:quickTab === index}">
+                  <li v-for="(quickMain, index) in mainMenu" :key="index" class="info-menu" :class="{active:quickTab === index}">
                     <a href="#"  @mouseover.prevent="quickTab = index +1">
                     <figure>
                       <img :src="quickMain.product1.img" :alt="quickMain.product1.alt">
@@ -51,8 +51,8 @@
                   <li v-show="quickTab == 1" class="sub-menu submenu01" @mouseleave.prevent="quickTab = 0">
                     <div class="sub-wrap submenu01--list">
                       <ul>
-                        <li><span class="sub-content sub-content--01"><p>배송현황1</p></span></li>
-                        <li><span class="sub-content sub-content--02"><p>배송현황2</p></span></li>
+                        <li class="sub-list"><span class="sub-content sub-content--01"><p>배송현황1</p></span></li>
+                        <li class="sub-list"><span class="sub-content sub-content--02"><p>배송현황2</p></span></li>
                         <li class="sub-on"><p>배송현황</p></li>
                       </ul>
                     </div>
@@ -60,9 +60,9 @@
                   <li v-show="quickTab == 2" class="sub-menu submenu02" @mouseleave.prevent="quickTab = 0">
                     <div class="sub-wrap submenu02--list">
                       <ul>
-                        <li><span class="sub-content sub-content--01"><p>성원톡1</p></span></li>
-                        <li><span class="sub-content sub-content--02"><p>성원톡2</p></span></li>
-                        <li><span class="sub-content sub-content--02"><p>성원톡3</p></span></li>
+                        <li class="sub-list"><span class="sub-content sub-content--01"><p>성원톡1</p></span></li>
+                        <li class="sub-list"><span class="sub-content sub-content--02"><p>성원톡2</p></span></li>
+                        <li class="sub-list"><span class="sub-content sub-content--02"><p>성원톡3</p></span></li>
                         <li class="sub-on"><p>성원톡</p></li>
                       </ul>
                     </div>
@@ -83,8 +83,11 @@
 
       <!-- hover tab -->
       <div class="nav-bg" v-if="currentTab">
-        <div v-show="currentTab == 1" class="nav__hoverTab" @mouseleave.prevent="currentTab = 0">
+        <div v-show="currentTab == 1" class="nav__hoverTab">
           <div class="nav__hoverTab--title">
+            <figure>
+              <img src="../../../assets/images/common/icon_hovermenu_card.svg" alt="명함 인쇄">
+            </figure>
             <h3>명함 인쇄</h3>
             <p>나만의 아이덴티티로<br> 자신을 알려보세요.</p>
           </div>
@@ -117,7 +120,10 @@
         </div>
         <div v-show="currentTab == 2" class="nav__hoverTab" @mouseleave.prevent="currentTab = 0">
           <div class="nav__hoverTab--title">
-            <h3>광고.홍보</h3>
+            <figure>
+              <img src="../../../assets/images/common/icon_hovermenu_card.svg" alt="명함 인쇄">
+            </figure>
+            <h3>광고·홍보</h3>
             <p>나만의 아이덴티티로<br> 자신을 알려보세요.</p>
           </div>
           <div class="nav__hoverTab--product">
@@ -149,6 +155,9 @@
         </div>
         <div v-show="currentTab == 3" class="nav__hoverTab" @mouseleave.prevent="currentTab = 0">
           <div class="nav__hoverTab--title">
+            <figure>
+              <img src="../../../assets/images/common/icon_hovermenu_sticker.svg" alt="명함 인쇄">
+            </figure>
             <h3>스티커</h3>
             <p>나만의 아이덴티티로<br> 자신을 알려보세요.</p>
           </div>
@@ -181,8 +190,12 @@
         </div>
         <div v-show="currentTab == 4" class="nav__hoverTab" @mouseleave.prevent="currentTab = 0">
           <div class="nav__hoverTab--title">
+            <figure>
+              <img src="../../../assets/images/common/icon_hovermenu_letter.svg" alt="명함 인쇄">
+            </figure>
             <h3>봉투</h3>
-            <p>나만의 아이덴티티로<br> 자신을 알려보세요.</p>
+            <p>다양한 제질과 사이즈제작<br>
+              정서스러운 정보전달!</p>
           </div>
           <div class="nav__hoverTab--product">
             <ul>
@@ -213,7 +226,10 @@
         </div>
         <div v-show="currentTab == 5" class="nav__hoverTab" @mouseleave.prevent="currentTab = 0">
           <div class="nav__hoverTab--title">
-            <h3>책.카탈로그</h3>
+            <figure>
+              <img src="../../../assets/images/common/icon_hovermenu_card.svg" alt="명함 인쇄">
+            </figure>
+            <h3>책·카탈로그</h3>
             <p>나만의 아이덴티티로<br> 자신을 알려보세요.</p>
           </div>
           <div class="nav__hoverTab--product">
@@ -245,6 +261,9 @@
         </div>
         <div v-show="currentTab == 6" class="nav__hoverTab" @mouseleave.prevent="currentTab = 0">
           <div class="nav__hoverTab--title">
+            <figure>
+              <img src="../../../assets/images/common/icon_hovermenu_card.svg" alt="명함 인쇄">
+            </figure>
             <h3>패키지</h3>
             <p>나만의 아이덴티티로<br> 자신을 알려보세요.</p>
           </div>
@@ -277,6 +296,9 @@
         </div>
         <div v-show="currentTab == 7" class="nav__hoverTab" @mouseleave.prevent="currentTab = 0">
           <div class="nav__hoverTab--title">
+            <figure>
+              <img src="../../../assets/images/common/icon_hovermenu_card.svg" alt="명함 인쇄">
+            </figure>
             <h3>판촉물</h3>
             <p>나만의 아이덴티티로<br> 자신을 알려보세요.</p>
           </div>
@@ -321,12 +343,6 @@
             <div class="accordions" v-for="(row, index) in fullList01" :key="index">
               <dl v-if="row.only == true">
                 <dt @click="row.open01 = !row.open">{{ row.term }}</dt>
-              </dl>
-              <dl v-else>
-                <dt @click="row.open01 = !row.open01" :class="{fullActive:row.open01}">{{ row.term }} <span :class="{rotate:row.open01}"><img src="../../../assets/images/common/icon_fullmenu_down.svg" alt="검색"></span></dt>
-                <template v-if="row.open01">
-                  <dd class="bullet" v-for="(item,index) in row.items" :key="index">{{ item.text }}</dd>
-                </template>
               </dl>
             </div>
           </div>
@@ -425,8 +441,10 @@
 
 <script>
 
+
 export default {
   components: {
+
   },
 
   methods: {
@@ -469,19 +487,19 @@ export default {
       mainMenu: [
         {
           product1: {
-            img: require("../../../assets/images/dummy/icon_dummy_off.svg"),
+            img: require("../../../assets/images/dummy/icon_dummy.svg"),
             alt: '퀵 아이콘',
           }
         },
         {
           product1: {
-            img: require("../../../assets/images/dummy/icon_dummy_off.svg"),
+            img: require("../../../assets/images/dummy/icon_dummy.svg"),
             alt: '퀵 아이콘',
           }
         },
         {
           product1: {
-            img: require("../../../assets/images/dummy/icon_dummy_off.svg"),
+            img: require("../../../assets/images/dummy/icon_dummy.svg"),
             alt: '퀵 아이콘',
           }
         }
@@ -489,10 +507,12 @@ export default {
       //nav data
       navList01: {
         item1: {
-          term: '일반명함',
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          open01: false,
+          img: require("../../../assets/images/common/thum_sticker_1.png"),
+          alt: '사각 스티커',
+          term: '사각 스티커',
+          only: true,
+        /*
+        open01: false,
           items: [
             {
               text: '초저가 전단지',
@@ -507,43 +527,42 @@ export default {
               text: '문어발 전단지',
             },
           ]
+          */
         },
         item2: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '컷팅명함',
-          open01: false,
-          items: [
-            {
-              text: 'test1',
-            },
-            {
-              text: 'test2',
-            },
-            {
-              text: 'test3',
-            },
-            {
-              text: 'test4',
-            },
-          ]
+          img: require("../../../assets/images/common/thum_sticker_2.png"),
+          alt: '모양 스티커',
+          term: '모양 스티커',
+          only: true,
         },
         item3: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '블록코팅 명함',
+          img: require("../../../assets/images/common/thum_sticker_3.png"),
+          alt: '다이컷팅 스티커',
+          term: '다이컷팅 스티커',
           only: true
         },
         item4: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '하이브리드 명함',
+          img: require("../../../assets/images/common/thum_sticker_7.png"),
+          alt: '주차 스티커',
+          term: '주차 스티커',
           only: true
         },
         item5: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '하이브리드 명함',
+          img: require("../../../assets/images/common/thum_sticker_4.png"),
+          alt: '라벨 스티커',
+          term: '라벨 스티커',
+          only: true
+        },
+        item6: {
+          img: require("../../../assets/images/common/thum_sticker_5.png"),
+          alt: '롤 스티커',
+          term: '롤 스티커',
+          only: true
+        },
+        item7: {
+          img: require("../../../assets/images/common/thum_sticker_6.png"),
+          alt: '떡 메모지',
+          term: '떡 메모지',
           only: true
         },
       },
@@ -558,21 +577,7 @@ export default {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
           alt: '퀵 아이콘',
           term: '컷팅명함',
-          open02: false,
-          items: [
-            {
-              text: 'test1',
-            },
-            {
-              text: 'test2',
-            },
-            {
-              text: 'test3',
-            },
-            {
-              text: 'test4',
-            },
-          ]
+          only: true,
         },
         item3: {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
@@ -590,63 +595,66 @@ export default {
       navList03: {
         item1: {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '블록코팅 명함',
+          alt: '스탠다드 봉투',
+          term: '스탠다드 봉투',
           only: true
         },
         item2: {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '블록코팅 명함',
+          alt: '세로 봉투',
+          term: '세로 봉투',
           only: true
         },
         item3: {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '블록코팅 명함',
-          only: true
-        },
-        item4: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '하이브리드 명함',
+          alt: '가로 봉투',
+          term: '가로 봉투',
           only: true
         },
       },
       navList04: {
         item1: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '블록코팅 명함',
+          img: require("../../../assets/images/common/thum_letter_1.png"),
+          alt: '스탠다드 봉투',
+          term: '스탠다드 봉투',
           only: true
         },
         item2: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '컷팅명함2',
-          open04: false,
-          items: [
-            {
-              text: 'test1',
-            },
-            {
-              text: 'test2',
-            },
-            {
-              text: 'test3',
-            },
-            {
-              text: 'test4',
-            },
-          ]
-        },
-        item3: {
-          img: require("../../../assets/images/dummy/img_header_icon.png"),
-          alt: '퀵 아이콘',
-          term: '블록코팅 명함',
+          img: require("../../../assets/images/common/thum_letter_2.png"),
+          alt: '세로 봉투',
+          term: '세로 봉투',
           only: true
         },
-
+        item3: {
+          img: require("../../../assets/images/common/thum_letter_3.png"),
+          alt: '가로 봉투',
+          term: '가로 봉투',
+          only: true
+        },
+        item4: {
+          img: require("../../../assets/images/common/thum_letter_4.png"),
+          alt: '초대장 봉투',
+          term: '초대장 봉투',
+          only: true
+        },
+        item5: {
+          img: require("../../../assets/images/common/thum_letter_5.png"),
+          alt: '기성 봉투',
+          term: '기성 봉투',
+          only: true
+        },
+        item6: {
+          img: require("../../../assets/images/common/thum_letter_6.png"),
+          alt: '캘린더 봉투',
+          term: '캘린더 봉투',
+          only: true
+        },
+        item7: {
+          img: require("../../../assets/images/common/thum_letter_7.png"),
+          alt: '창 봉투',
+          term: '창 봉투',
+          only: true
+        },
       },
       navList05: {
         item1: {
@@ -659,21 +667,7 @@ export default {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
           alt: '퀵 아이콘',
           term: '컷팅명함',
-          open05: false,
-          items: [
-            {
-              text: 'test1',
-            },
-            {
-              text: 'test2',
-            },
-            {
-              text: 'test3',
-            },
-            {
-              text: 'test4',
-            },
-          ]
+          only: true,
         },
         item3: {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
@@ -700,20 +694,7 @@ export default {
           alt: '퀵 아이콘',
           term: '컷팅명함',
           open06: false,
-          items: [
-            {
-              text: 'test1',
-            },
-            {
-              text: 'test2',
-            },
-            {
-              text: 'test3',
-            },
-            {
-              text: 'test4',
-            },
-          ]
+          only: true,
         },
         item3: {
           img: require("../../../assets/images/dummy/img_header_icon.png"),
@@ -740,20 +721,7 @@ export default {
           alt: '퀵 아이콘',
           term: '컷팅명함',
           open07: false,
-          items: [
-            {
-              text: 'test1',
-            },
-            {
-              text: 'test2',
-            },
-            {
-              text: 'test3',
-            },
-            {
-              text: 'test4',
-            },
-          ]
+          only: true,
         },
       },
       groups: [

@@ -157,6 +157,7 @@ span {
             position: relative;
             line-height: 82px;
             font-size: 18px;
+            font-weight: 500;
             padding: 0 20px; }
             .header-content .header__wrap .nav ul li a {
               width: 100%;
@@ -199,7 +200,7 @@ span {
         width: 80px;
         height: 146px;
         background: #3557da;
-        border-radius: 0 0 30px 30px;
+        border-radius: 0 0 40px 40px;
         box-shadow: -3px 2px 5px 0 rgba(0, 0, 0, 0.2);
         text-align: center;
         color: #fff;
@@ -208,11 +209,16 @@ span {
         .header-content .header .quick-content .quickNav .quick-title {
           position: relative;
           display: block;
-          padding-top: 50px; }
+          padding-top: 75px;
+          font-size: 14px;
+          line-height: 2;
+          font-weight: bold;
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          font-family: roboto; }
           .header-content .header .quick-content .quickNav .quick-title:before {
             content: '';
             position: absolute;
-            top: 17px;
+            top: 40px;
             left: 17px;
             display: block;
             font-size: 13px;
@@ -222,12 +228,25 @@ span {
             background-image: url("/assets/images/common/icon_quick_title.svg");
             background-size: 48px 28px;
             background-repeat: no-repeat; }
-        .header-content .header .quick-content .quickNav img {
-          transition: all 1s;
-          transform: rotate(180deg); }
-        .header-content .header .quick-content .quickNav .rotate img {
-          transition: all 1s;
-          transform: rotate(360deg); }
+          .header-content .header .quick-content .quickNav .quick-title em {
+            display: inline-block;
+            position: relative;
+            top: -10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 2.15;
+            letter-spacing: -0.26px;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
+        .header-content .header .quick-content .quickNav .quickBtn {
+          position: relative;
+          bottom: 20px; }
+          .header-content .header .quick-content .quickNav .quickBtn img {
+            transition: all .2s;
+            transform: rotate(180deg); }
+          .header-content .header .quick-content .quickNav .quickBtn.rotate img {
+            transition: all .2s;
+            transform: rotate(360deg); }
       .header-content .header .quick-content .quickList {
         position: absolute;
         right: 16px;
@@ -239,21 +258,32 @@ span {
           padding: 35px 0;
           background: #4d6ee4;
           width: 48px;
-          border-radius: 40px; }
+          border-radius: 40px;
+          box-shadow: -3px 2px 5px 0 rgba(0, 0, 0, 0.2); }
+          .header-content .header .quick-content .quickList .quick-main .info-menu {
+            text-align: center;
+            margin: 9px 0px 25px 0px; }
+            .header-content .header .quick-content .quickList .quick-main .info-menu:last-child {
+              margin-bottom: 0; }
         .header-content .header .quick-content .quickList .quick-sub {
           position: absolute;
           top: 0; }
           .header-content .header .quick-content .quickList .quick-sub .sub-menu {
-            padding-left: 20px;
+            padding-left: 27px;
             position: absolute;
             height: 56px; }
             .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap {
               color: #9cb2ff; }
-            .header-content .header .quick-content .quickList .quick-sub .sub-menu ul {
-              display: flex; }
+              .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap ul {
+                display: flex; }
+                .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap ul .sub-list {
+                  margin: 7px 0 0 24px;
+                  cursor: pointer; }
+                  .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap ul .sub-list:first-child {
+                    margin-left: 0; }
           .header-content .header .quick-content .quickList .quick-sub .submenu01 {
-            top: 22px;
-            right: -55px;
+            top: 32px;
+            right: -49px;
             background: #3557da;
             border-radius: 40px; }
             .header-content .header .quick-content .quickList .quick-sub .submenu01--list {
@@ -268,36 +298,36 @@ span {
                     content: '';
                     position: absolute;
                     top: 0px;
-                    left: 6px;
+                    left: 11px;
                     display: block;
                     font-size: 13px;
                     height: 28px;
                     width: 28px;
                     padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy_off.svg");
+                    background-image: url("/assets/images/dummy/icon_dummy.svg");
                     background-size: 28px;
                     background-repeat: no-repeat; }
                   .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:hover {
                     color: #f8fafc; }
                     .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.svg"); }
+                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
                   .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:before {
                     content: '';
                     position: absolute;
                     top: 0px;
-                    left: 6px;
+                    left: 11px;
                     display: block;
                     font-size: 13px;
                     height: 28px;
                     width: 28px;
                     padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy_off.svg");
+                    background-image: url("/assets/images/dummy/icon_dummy.svg");
                     background-size: 28px;
                     background-repeat: no-repeat; }
                   .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:hover {
                     color: #f8fafc; }
                     .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.svg"); }
+                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
                 .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li.sub-on {
                   line-height: 56px;
                   margin: 0 0 0 10px;
@@ -310,13 +340,14 @@ span {
                     right: 10px;
                     height: 30px;
                     width: 30px;
-                    background-image: url("/assets/images/dummy/icon_dummy_on.svg");
+                    background-image: url("/assets/images/dummy/icon_dummy_on.png");
+                    fill: orange;
                     background-size: 30px;
                     background-repeat: no-repeat;
                     background-position: right; }
           .header-content .header .quick-content .quickList .quick-sub .submenu02 {
-            top: 75px;
-            right: -55px;
+            top: 90px;
+            right: -50px;
             background: #3557da;
             border-radius: 40px; }
             .header-content .header .quick-content .quickList .quick-sub .submenu02--list {
@@ -338,13 +369,13 @@ span {
                     height: 28px;
                     width: 28px;
                     padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy_off.svg");
+                    background-image: url("/assets/images/dummy/icon_dummy.svg");
                     background-size: 28px;
                     background-repeat: no-repeat; }
                   .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:hover {
                     color: #f8fafc; }
                     .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.svg"); }
+                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
                   .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:before {
                     content: '';
                     position: absolute;
@@ -355,13 +386,13 @@ span {
                     height: 28px;
                     width: 28px;
                     padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy_off.svg");
+                    background-image: url("/assets/images/dummy/icon_dummy.svg");
                     background-size: 28px;
                     background-repeat: no-repeat; }
                   .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:hover {
                     color: #f8fafc; }
                     .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.svg"); }
+                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
                   .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:before {
                     content: '';
                     position: absolute;
@@ -372,13 +403,13 @@ span {
                     height: 28px;
                     width: 28px;
                     padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy_off.svg");
+                    background-image: url("/assets/images/dummy/icon_dummy.svg");
                     background-size: 28px;
                     background-repeat: no-repeat; }
                   .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:hover {
                     color: #f8fafc; }
                     .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.svg"); }
+                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
                 .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li.sub-on {
                   line-height: 56px;
                   margin: 0 0 0 10px;
@@ -391,13 +422,13 @@ span {
                     right: 10px;
                     height: 30px;
                     width: 30px;
-                    background-image: url("/assets/images/dummy/icon_dummy_on.svg");
+                    background-image: url("/assets/images/dummy/icon_dummy_on.png");
                     background-size: 30px;
                     background-repeat: no-repeat;
                     background-position: right; }
           .header-content .header .quick-content .quickList .quick-sub .submenu03 {
-            top: 137px;
-            right: -55px;
+            top: 151px;
+            right: -49px;
             background: #3557da;
             border-radius: 40px; }
             .header-content .header .quick-content .quickList .quick-sub .submenu03--list {
@@ -437,9 +468,6 @@ span {
               display: flex; }
               .header-content .header .quick-content .quickList .quick--sub ul li {
                 width: 50px; }
-        .header-content .header .quick-content .quickList li {
-          margin: 9px 9px 25px 9px;
-          cursor: pointer; }
   .header-content .nav-bg {
     position: fixed;
     z-index: 998;
@@ -447,7 +475,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.7); }
     .header-content .nav-bg .nav__hoverTab {
       display: flex;
       position: absolute;
@@ -456,10 +484,11 @@ span {
       height: auto; }
       .header-content .nav-bg .nav__hoverTab--title {
         width: 320px;
-        padding: 36px;
-        text-align: center;
+        padding: 30px 26px 30px 30px;
+        text-align: right;
         background: #3557da; }
         .header-content .nav-bg .nav__hoverTab--title h3 {
+          margin-top: 27px;
           margin-bottom: 14px;
           color: #f8fafc;
           font-size: 30px;
@@ -467,6 +496,7 @@ span {
           line-height: 0.93;
           animation: fadein .5s; }
         .header-content .nav-bg .nav__hoverTab--title p {
+          margin-top: 10px;
           font-size: 18px;
           line-height: 1.44;
           letter-spacing: -0.36px;
@@ -475,14 +505,15 @@ span {
       .header-content .nav-bg .nav__hoverTab--product {
         width: 100%;
         height: auto;
-        padding: 42px 80px 17px 42px;
+        padding: 42px 114px 17px 42px;
         background: #f5f5f5; }
         .header-content .nav-bg .nav__hoverTab--product ul li .accordions {
           float: left;
           position: relative;
           margin-right: 30px;
           margin-bottom: 20px;
-          width: 17%; }
+          width: 17%;
+          min-width: 254px; }
           .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt {
             position: relative;
             text-indent: 50px;
@@ -494,10 +525,13 @@ span {
             border-radius: 12px;
             background: #fff;
             overflow: hidden; }
+            .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt:hover {
+              box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06); }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt.border {
               box-sizing: border-box;
               border: 2px solid #3557da; }
               .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt.border strong {
+                font-size: 18px;
                 color: #3557da; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt figure img {
               position: absolute;
@@ -506,7 +540,7 @@ span {
               width: 92px; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt strong {
               display: block;
-              text-indent: 100px; }
+              text-indent: 105px; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt .drop-down {
               width: 17px;
               position: absolute;
@@ -530,6 +564,7 @@ span {
             position: relative;
             text-indent: 20px; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl .bullet span {
+              font-size: 18px;
               position: relative; }
               .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl .bullet span:hover {
                 color: #3557da; }
