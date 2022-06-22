@@ -76,7 +76,7 @@ span {
         margin-bottom: 20px;
         top: 0; }
       .full-modal .modal-wrap .full-wrap__section {
-        margin-top: 100px;
+        margin-top: 80px;
         margin-right: 60px;
         width: 14%;
         color: #fff; }
@@ -249,20 +249,20 @@ span {
             transform: rotate(360deg); }
       .header-content .header .quick-content .quickList {
         position: absolute;
-        right: 16px;
+        right: 5px;
         top: 155px;
         z-index: 999; }
         .header-content .header .quick-content .quickList.active {
           transition: opacity .5s; }
         .header-content .header .quick-content .quickList .quick-main {
-          padding: 35px 0;
+          padding: 25px 0;
           background: #4d6ee4;
-          width: 48px;
+          width: 70px;
           border-radius: 40px;
           box-shadow: -3px 2px 5px 0 rgba(0, 0, 0, 0.2); }
           .header-content .header .quick-content .quickList .quick-main .info-menu {
             text-align: center;
-            margin: 9px 0px 25px 0px; }
+            margin-bottom: 17px; }
             .header-content .header .quick-content .quickList .quick-main .info-menu:last-child {
               margin-bottom: 0; }
         .header-content .header .quick-content .quickList .quick-sub {
@@ -271,65 +271,82 @@ span {
           .header-content .header .quick-content .quickList .quick-sub .sub-menu {
             padding-left: 27px;
             position: absolute;
-            height: 56px; }
+            height: 68px; }
             .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap {
               color: #9cb2ff; }
               .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap ul {
                 display: flex; }
                 .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap ul .sub-list {
-                  margin: 7px 0 0 24px;
+                  margin: 10px 0 0 20px;
                   cursor: pointer; }
                   .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap ul .sub-list:first-child {
                     margin-left: 0; }
+                  .header-content .header .quick-content .quickList .quick-sub .sub-menu .sub-wrap ul .sub-list .sub-content {
+                    padding-top: 30px;
+                    font-size: 13px;
+                    display: block; }
           .header-content .header .quick-content .quickList .quick-sub .submenu01 {
-            top: 32px;
-            right: -49px;
+            top: 12px;
+            right: -66px;
             background: #3557da;
             border-radius: 40px; }
             .header-content .header .quick-content .quickList .quick-sub .submenu01--list {
               position: relative; }
               .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li {
                 position: relative; }
-                .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content {
-                  font-size: 13px;
+                .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
                   display: block;
-                  padding-top: 25px; }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:before {
-                    content: '';
-                    position: absolute;
-                    top: 0px;
-                    left: 11px;
-                    display: block;
-                    font-size: 13px;
-                    height: 28px;
-                    width: 28px;
-                    padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy.svg");
-                    background-size: 28px;
-                    background-repeat: no-repeat; }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:hover {
-                    color: #f8fafc; }
-                    .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:before {
-                    content: '';
-                    position: absolute;
-                    top: 0px;
-                    left: 11px;
-                    display: block;
-                    font-size: 13px;
-                    height: 28px;
-                    width: 28px;
-                    padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy.svg");
-                    background-size: 28px;
-                    background-repeat: no-repeat; }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:hover {
-                    color: #f8fafc; }
-                    .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
+                  font-size: 13px;
+                  height: 40px;
+                  width: 40px;
+                  padding-top: 5px;
+                  background-image: url("/assets/images/common/icon_quick_sub_cs1_off.svg");
+                  background-size: 40px;
+                  background-repeat: no-repeat; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:hover {
+                  color: #f8fafc; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--01:hover:before {
+                    background-image: url("/assets/images/common/icon_quick_sub_cs1.svg"); }
+                .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  display: block;
+                  font-size: 13px;
+                  height: 40px;
+                  width: 40px;
+                  padding-top: 5px;
+                  background-image: url("/assets/images/common/icon_quick_sub_cs2_off.svg");
+                  background-size: 40px;
+                  background-repeat: no-repeat; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:hover {
+                  color: #f8fafc; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--02:hover:before {
+                    background-image: url("/assets/images/common/icon_quick_sub_cs2.svg"); }
+                .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--03:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 5px;
+                  display: block;
+                  font-size: 13px;
+                  height: 40px;
+                  width: 40px;
+                  padding-top: 5px;
+                  background-image: url("/assets/images/common/icon_quick_sub_cs3_off.svg");
+                  background-size: 40px;
+                  background-repeat: no-repeat; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--03:hover {
+                  color: #f8fafc; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li .sub-content--03:hover:before {
+                    background-image: url("/assets/images/common/icon_quick_sub_cs3.svg"); }
                 .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li.sub-on {
-                  line-height: 56px;
+                  line-height: 68px;
                   margin: 0 0 0 10px;
                   color: #f8fafc;
                   padding-right: 50px; }
@@ -338,124 +355,265 @@ span {
                     position: absolute;
                     top: 13px;
                     right: 10px;
-                    height: 30px;
-                    width: 30px;
-                    background-image: url("/assets/images/dummy/icon_dummy_on.png");
-                    fill: orange;
-                    background-size: 30px;
-                    background-repeat: no-repeat;
-                    background-position: right; }
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_time.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu01--list ul li.sub-on p {
+                    margin: 0 10px 0 20px; }
           .header-content .header .quick-content .quickList .quick-sub .submenu02 {
-            top: 90px;
-            right: -50px;
+            top: 78px;
+            right: -66px;
             background: #3557da;
             border-radius: 40px; }
             .header-content .header .quick-content .quickList .quick-sub .submenu02--list {
-              position: relative;
-              display: flex; }
+              position: relative; }
               .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li {
                 position: relative; }
-                .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content {
-                  font-size: 13px;
+                .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 12px;
                   display: block;
-                  padding-top: 25px; }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:before {
-                    content: '';
-                    position: absolute;
-                    top: 0px;
-                    left: 6px;
-                    display: block;
-                    font-size: 13px;
-                    height: 28px;
-                    width: 28px;
-                    padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy.svg");
-                    background-size: 28px;
-                    background-repeat: no-repeat; }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:hover {
-                    color: #f8fafc; }
-                    .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:before {
-                    content: '';
-                    position: absolute;
-                    top: 0px;
-                    left: 6px;
-                    display: block;
-                    font-size: 13px;
-                    height: 28px;
-                    width: 28px;
-                    padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy.svg");
-                    background-size: 28px;
-                    background-repeat: no-repeat; }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:hover {
-                    color: #f8fafc; }
-                    .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:before {
-                    content: '';
-                    position: absolute;
-                    top: 0px;
-                    left: 6px;
-                    display: block;
-                    font-size: 13px;
-                    height: 28px;
-                    width: 28px;
-                    padding-top: 5px;
-                    background-image: url("/assets/images/dummy/icon_dummy.svg");
-                    background-size: 28px;
-                    background-repeat: no-repeat; }
-                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:hover {
-                    color: #f8fafc; }
-                    .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:hover:before {
-                      background-image: url("/assets/images/dummy/icon_dummy_on.png"); }
+                  font-size: 13px;
+                  height: 40px;
+                  width: 40px;
+                  padding-top: 5px;
+                  background-image: url("/assets/images/common/icon_quick_sub_guide1_off.svg");
+                  background-size: 40px;
+                  background-repeat: no-repeat; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:hover {
+                  color: #f8fafc; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--01:hover:before {
+                    background-image: url("/assets/images/common/icon_quick_sub_guide1.svg"); }
+                .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 12px;
+                  display: block;
+                  font-size: 13px;
+                  height: 40px;
+                  width: 40px;
+                  padding-top: 5px;
+                  background-image: url("/assets/images/common/icon_quick_sub_guide2_off.svg");
+                  background-size: 40px;
+                  background-repeat: no-repeat; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:hover {
+                  color: #f8fafc; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--02:hover:before {
+                    background-image: url("/assets/images/common/icon_quick_sub_guide2.svg"); }
+                .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 12px;
+                  display: block;
+                  font-size: 13px;
+                  height: 40px;
+                  width: 40px;
+                  padding-top: 5px;
+                  background-image: url("/assets/images/common/icon_quick_sub_guide3_off.svg");
+                  background-size: 40px;
+                  background-repeat: no-repeat; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:hover {
+                  color: #f8fafc; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li .sub-content--03:hover:before {
+                    background-image: url("/assets/images/common/icon_quick_sub_guide3.svg"); }
                 .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li.sub-on {
-                  line-height: 56px;
+                  line-height: 68px;
                   margin: 0 0 0 10px;
                   color: #f8fafc;
                   padding-right: 50px; }
                   .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li.sub-on:before {
                     content: '';
                     position: absolute;
-                    top: 13px;
+                    top: 11px;
                     right: 10px;
-                    height: 30px;
-                    width: 30px;
-                    background-image: url("/assets/images/dummy/icon_dummy_on.png");
-                    background-size: 30px;
-                    background-repeat: no-repeat;
-                    background-position: right; }
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_guide.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu02--list ul li.sub-on p {
+                    margin: 0 10px 0 20px; }
           .header-content .header .quick-content .quickList .quick-sub .submenu03 {
-            top: 151px;
-            right: -49px;
+            top: 142px;
+            right: -66px;
             background: #3557da;
             border-radius: 40px; }
             .header-content .header .quick-content .quickList .quick-sub .submenu03--list {
-              position: relative;
-              display: flex; }
+              position: relative; }
               .header-content .header .quick-content .quickList .quick-sub .submenu03--list ul li {
                 position: relative; }
-                .header-content .header .quick-content .quickList .quick-sub .submenu03--list ul li .sub-content {
-                  font-size: 13px;
-                  display: block;
-                  padding-top: 25px; }
                 .header-content .header .quick-content .quickList .quick-sub .submenu03--list ul li.sub-on {
-                  line-height: 56px;
-                  margin: 0 0 0 10px;
+                  line-height: 68px;
                   color: #f8fafc;
                   padding-right: 50px; }
                   .header-content .header .quick-content .quickList .quick-sub .submenu03--list ul li.sub-on:before {
                     content: '';
                     position: absolute;
-                    top: 13px;
+                    top: 11px;
                     right: 10px;
-                    height: 30px;
-                    width: 30px;
-                    background-image: url("/assets/images/dummy/icon_dummy_on.svg");
-                    background-size: 30px;
-                    background-repeat: no-repeat;
-                    background-position: right; }
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_product.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu03--list ul li.sub-on.only p {
+                    margin-right: 10px; }
+          .header-content .header .quick-content .quickList .quick-sub .submenu04 {
+            top: 206px;
+            right: -66px;
+            background: #3557da;
+            border-radius: 40px; }
+            .header-content .header .quick-content .quickList .quick-sub .submenu04--list {
+              position: relative; }
+              .header-content .header .quick-content .quickList .quick-sub .submenu04--list ul li {
+                position: relative; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu04--list ul li.sub-on {
+                  line-height: 68px;
+                  color: #f8fafc;
+                  padding-right: 50px; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu04--list ul li.sub-on:before {
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    right: 10px;
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_cs.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu04--list ul li.sub-on.only p {
+                    margin-right: 10px; }
+          .header-content .header .quick-content .quickList .quick-sub .submenu05 {
+            top: 270px;
+            right: -66px;
+            background: #3557da;
+            border-radius: 40px; }
+            .header-content .header .quick-content .quickList .quick-sub .submenu05--list {
+              position: relative; }
+              .header-content .header .quick-content .quickList .quick-sub .submenu05--list ul li {
+                position: relative; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu05--list ul li.sub-on {
+                  line-height: 68px;
+                  color: #f8fafc;
+                  padding-right: 50px; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu05--list ul li.sub-on:before {
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    right: 10px;
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_font.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu05--list ul li.sub-on.only p {
+                    margin-right: 10px; }
+          .header-content .header .quick-content .quickList .quick-sub .submenu06 {
+            top: 334px;
+            right: -66px;
+            background: #3557da;
+            border-radius: 40px; }
+            .header-content .header .quick-content .quickList .quick-sub .submenu06--list {
+              position: relative; }
+              .header-content .header .quick-content .quickList .quick-sub .submenu06--list ul li {
+                position: relative; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu06--list ul li.sub-on {
+                  line-height: 68px;
+                  color: #f8fafc;
+                  padding-right: 50px; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu06--list ul li.sub-on:before {
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    right: 10px;
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_recent.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu06--list ul li.sub-on.only p {
+                    margin-right: 10px; }
+          .header-content .header .quick-content .quickList .quick-sub .submenu07 {
+            top: 398px;
+            right: -66px;
+            background: #3557da;
+            border-radius: 40px; }
+            .header-content .header .quick-content .quickList .quick-sub .submenu07--list {
+              position: relative; }
+              .header-content .header .quick-content .quickList .quick-sub .submenu07--list ul li {
+                position: relative; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu07--list ul li.sub-on {
+                  line-height: 68px;
+                  color: #f8fafc;
+                  padding-right: 50px; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu07--list ul li.sub-on:before {
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    right: 10px;
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_cart.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu07--list ul li.sub-on.only p {
+                    margin-right: 10px; }
+          .header-content .header .quick-content .quickList .quick-sub .submenu08 {
+            top: 462px;
+            right: -66px;
+            background: #3557da;
+            border-radius: 40px; }
+            .header-content .header .quick-content .quickList .quick-sub .submenu08--list {
+              position: relative; }
+              .header-content .header .quick-content .quickList .quick-sub .submenu08--list ul li {
+                position: relative; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu08--list ul li.sub-on {
+                  line-height: 68px;
+                  color: #f8fafc;
+                  padding-right: 50px; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu08--list ul li.sub-on:before {
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    right: 10px;
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_order.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu08--list ul li.sub-on.only p {
+                    margin-right: 10px; }
+          .header-content .header .quick-content .quickList .quick-sub .submenu09 {
+            top: 526px;
+            right: -66px;
+            background: #3557da;
+            border-radius: 40px; }
+            .header-content .header .quick-content .quickList .quick-sub .submenu09--list {
+              position: relative; }
+              .header-content .header .quick-content .quickList .quick-sub .submenu09--list ul li {
+                position: relative; }
+                .header-content .header .quick-content .quickList .quick-sub .submenu09--list ul li.sub-on {
+                  line-height: 68px;
+                  color: #f8fafc;
+                  padding-right: 50px; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu09--list ul li.sub-on:before {
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    right: 10px;
+                    height: 42px;
+                    width: 42px;
+                    background-image: url("/assets/images/common/icon_quick_benefit.svg");
+                    background-size: 42px;
+                    background-repeat: no-repeat; }
+                  .header-content .header .quick-content .quickList .quick-sub .submenu09--list ul li.sub-on.only p {
+                    margin-right: 10px; }
         .header-content .header .quick-content .quickList .quick {
           position: relative; }
           .header-content .header .quick-content .quickList .quick--title {
@@ -483,10 +641,15 @@ span {
       width: 100%;
       height: auto; }
       .header-content .nav-bg .nav__hoverTab--title {
+        position: relative;
         width: 320px;
         padding: 30px 26px 30px 30px;
         text-align: right;
         background: #3557da; }
+        .header-content .nav-bg .nav__hoverTab--title .title-wrap {
+          position: absolute;
+          right: 26px;
+          bottom: 30px; }
         .header-content .nav-bg .nav__hoverTab--title h3 {
           margin-top: 27px;
           margin-bottom: 14px;
@@ -516,9 +679,7 @@ span {
           min-width: 254px; }
           .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt {
             position: relative;
-            text-indent: 50px;
             height: 74px;
-            line-height: 74px;
             font-size: 18px;
             letter-spacing: -0.36px;
             cursor: pointer;
@@ -540,7 +701,10 @@ span {
               width: 92px; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt strong {
               display: block;
-              text-indent: 105px; }
+              position: absolute;
+              top: 50%;
+              transform: translate(0, -50%);
+              padding-left: 104px; }
             .header-content .nav-bg .nav__hoverTab--product ul li .accordions dl dt .drop-down {
               width: 17px;
               position: absolute;
@@ -589,7 +753,13 @@ span {
               border-radius: 50%; }
 
 /* slide motion */
-.slide-enter-active {
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s; }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0; }
+
+/*.slide-enter-active {
   -moz-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -597,9 +767,9 @@ span {
   -moz-transition-timing-function: ease-in;
   -webkit-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in; }
-
-.slide-leave-active {
+  transition-timing-function: ease-in;
+}*/
+/*.slide-leave-active {
   -moz-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -607,8 +777,8 @@ span {
   -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
-
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}*/
 .slide-enter-to, .slide-leave {
   max-height: 400px;
   overflow: hidden; }
