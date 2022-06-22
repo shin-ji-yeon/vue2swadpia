@@ -577,13 +577,16 @@
           }
           .tag {
             padding-top: 3px;
+            height: 97px;
             color: #c3c6f7;
             font-size: 13px;
             letter-spacing: -0.6px;
             transition: all 500ms;
+            br {
+              display: none;
+            }
           }
           .detail {
-            padding-top: 75px;
             text-align: right;
             .info {
               span {
@@ -678,6 +681,9 @@
             .tag {
               padding-top: 6px;
               font-size: 16px;
+              br {
+                display: block;
+              }
             }
             .detail {
               display: block;

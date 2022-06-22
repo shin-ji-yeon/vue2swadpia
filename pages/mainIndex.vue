@@ -205,7 +205,10 @@
                   </div>
                   <div class="recom-product__content">
                     <div class="title">홍보물 책자</div>
-                    <div class="tag">#디지털 #홍보용 #토너 #인디고</div>
+                    <div class="tag">
+                      #디지털 #홍보용<br />
+                      #토너 #인디고
+                    </div>
                     <div class="detail">
                       <div class="info">
                         <span>삼각사이즈230x165</span>
@@ -227,7 +230,10 @@
                   </div>
                   <div class="recom-product__content">
                     <div class="title">안내형 봉투</div>
-                    <div class="tag">#봉투 #안내장 #내지 #모조지</div>
+                    <div class="tag">
+                      #봉투 #안내장<br />
+                      #내지 #모조지
+                    </div>
                     <div class="detail">
                       <div class="info">
                         <span>삼각사이즈230x165</span>
@@ -267,7 +273,10 @@
                   </div>
                   <div class="recom-product__content">
                     <div class="title">디지털 캘린더</div>
-                    <div class="tag">#디지털 #캘린더 #브로셔 #인디고인쇄</div>
+                    <div class="tag">
+                      #디지털 #캘린더<br />
+                      #브로셔 #인디고인쇄
+                    </div>
                     <div class="detail">
                       <div class="info">
                         <span>삼각사이즈230x165</span>
@@ -289,7 +298,10 @@
                   </div>
                   <div class="recom-product__content">
                     <div class="title">디지털 책자</div>
-                    <div class="tag">#디지털 #홍보용 #토너인쇄 #책자</div>
+                    <div class="tag">
+                      #디지털 #홍보용<br />
+                      #토너인쇄 #책자
+                    </div>
                     <div class="detail">
                       <div class="info">
                         <span>삼각사이즈230x165</span>
