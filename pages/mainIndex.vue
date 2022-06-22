@@ -37,13 +37,13 @@
                   </div>
                   <div class="best-product__content">
                     <div class="title">고급 명함지</div>
-                    <div class="text">가장 기본적이며 실용성의 명함</div>
+                    <div class="text">다양한 수입지로 고급스러운 나만의 명함</div>
                     <div class="detail">
                       <div class="info">
                         <span>90x50</span>
-                        <span>1000매</span>
+                        <span>200매</span>
                       </div>
-                      <div class="price">5,940원</div>
+                      <div class="price">16,050원</div>
                     </div>
                   </div>
                 </a>
@@ -55,14 +55,14 @@
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
-                    <div class="title">고급 명함지</div>
+                    <div class="title">일반 명함지</div>
                     <div class="text">가장 기본적이며 실용성의 명함</div>
                     <div class="detail">
                       <div class="info">
                         <span>90x50</span>
-                        <span>1000매</span>
+                        <span>500매</span>
                       </div>
-                      <div class="price">5,940원</div>
+                      <div class="price">4,620원</div>
                     </div>
                   </div>
                 </a>
@@ -74,14 +74,14 @@
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
-                    <div class="title">고급 초대장</div>
-                    <div class="text">다채로운 재질의 고품격 초대장</div>
+                    <div class="title">디지털 엽서·상품권</div>
+                    <div class="text">엽서 사이즈의 디지털 소량 인쇄</div>
                     <div class="detail">
                       <div class="info">
-                        <span>237x167</span>
-                        <span>300매</span>
+                        <span>100x148</span>
+                        <span>8매</span>
                       </div>
-                      <div class="price">66,000원</div>
+                      <div class="price">2,310원</div>
                     </div>
                   </div>
                 </a>
@@ -94,13 +94,13 @@
                   </div>
                   <div class="best-product__content">
                     <div class="title">도무송형 스티커</div>
-                    <div class="text">다양하고 개성적인 모양과 크기</div>
+                    <div class="text">우수한 접착력 및 경제적 규격</div>
                     <div class="detail">
                       <div class="info">
-                        <span>35x50</span>
+                        <span>40x60</span>
                         <span>1000매</span>
                       </div>
-                      <div class="price">10,230원</div>
+                      <div class="price">5,940원</div>
                     </div>
                   </div>
                 </a>
@@ -112,14 +112,14 @@
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
-                    <div class="title">고급 명함지</div>
-                    <div class="text">가장 기본적이며 실용성의 명함</div>
+                    <div class="title">디지털 명함지</div>
+                    <div class="text">여러지종 및 후가공 개성있는 명함</div>
                     <div class="detail">
                       <div class="info">
                         <span>90x50</span>
-                        <span>1000매</span>
+                        <span>96매</span>
                       </div>
-                      <div class="price">5,940원</div>
+                      <div class="price">4,950원</div>
                     </div>
                   </div>
                 </a>
@@ -150,8 +150,8 @@
                     <div class="more">자세히보기</div>
                   </div>
                   <div class="best-product__content">
-                    <div class="title">대/중/소 봉투</div>
-                    <div class="text">가장 기본적이며 실용성의 봉투</div>
+                    <div class="title">대·중·소 봉투</div>
+                    <div class="text">가장 많이 사용되는 일반적인 봉투</div>
                     <div class="detail">
                       <div class="info">
                         <span>330x245</span>
