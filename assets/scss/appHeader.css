@@ -94,8 +94,6 @@ span {
             letter-spacing: -0.36px;
             line-height: 2;
             cursor: pointer; }
-            .full-modal .modal-wrap .full-wrap__section .accordions dl dt:hover {
-              color: #00edff; }
             .full-modal .modal-wrap .full-wrap__section .accordions dl dt span {
               width: 17px;
               position: absolute;
@@ -245,10 +243,10 @@ span {
           bottom: 20px; }
           .header-content .header .quick-content .quickNav .quickBtn img {
             transition: all .2s;
-            transform: rotate(0deg); }
+            transform: rotate(180deg); }
           .header-content .header .quick-content .quickNav .quickBtn.rotate img {
             transition: all .2s;
-            transform: rotate(180deg); }
+            transform: rotate(360deg); }
       .header-content .header .quick-content .quickList {
         position: absolute;
         right: 5px;
