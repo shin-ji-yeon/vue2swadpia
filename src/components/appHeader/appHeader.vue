@@ -33,7 +33,7 @@
               <span class="quickBtn" :class="{rotate:quickShow}"><img src="../../../assets/images/common/quick-arrow.svg" alt="검색"></span>
             </div>
           <!--menu-->
-          <transition name="fade">
+          <transition name="slide">
             <div class="quickList" v-if="quickShow" >
               <div class="quick-main">
                 <ul>
@@ -63,7 +63,7 @@
                       <ul>
                         <li class="sub-list"><span class="sub-content sub-content--01"><p>상품가이드</p></span></li>
                         <li class="sub-list"><span class="sub-content sub-content--02"><p>주문가이드</p></span></li>
-                        <li class="sub-list"><span class="sub-content sub-content--02"><p>인쇄가이드</p></span></li>
+                        <li class="sub-list"><span class="sub-content sub-content--03"><p>인쇄가이드</p></span></li>
                         <li class="sub-on"><p>가이드</p></li>
                       </ul>
                     </div>
@@ -602,9 +602,9 @@ export default {
       //nav data
       navList01: {
         item1: {
-          img: require("../../../assets/images/common/thum_sticker_1.png"),
-          alt: '사각 스티커',
-          term: '사각 스티커',
+          img: require("../../../assets/images/common/thum_name_1.png"),
+          alt: '일반 명함',
+          term: '일반 명함',
           only: true,
         /*
         open01: false,
@@ -625,39 +625,45 @@ export default {
           */
         },
         item2: {
-          img: require("../../../assets/images/common/thum_sticker_2.png"),
-          alt: '모양 스티커',
-          term: '모양 스티커',
+          img: require("../../../assets/images/common/thum_name_2.png"),
+          alt: '컷팅 명함',
+          term: '컷팅 명함',
           only: true,
         },
         item3: {
-          img: require("../../../assets/images/common/thum_sticker_3.png"),
-          alt: '다이컷팅 스티커',
-          term: '다이컷팅 스티커',
+          img: require("../../../assets/images/common/thum_name_3.png"),
+          alt: '볼록코팅 명함',
+          term: '볼록코팅 명함',
           only: true
         },
         item4: {
-          img: require("../../../assets/images/common/thum_sticker_7.png"),
-          alt: '주차 스티커',
-          term: '주차 스티커',
+          img: require("../../../assets/images/common/thum_name_4.png"),
+          alt: '컬러지 명함',
+          term: '컬러지 명함',
           only: true
         },
         item5: {
-          img: require("../../../assets/images/common/thum_sticker_4.png"),
-          alt: '라벨 스티커',
-          term: '라벨 스티커',
+          img: require("../../../assets/images/common/thum_name_5.png"),
+          alt: '투명 명함',
+          term: '투명 명함',
           only: true
         },
         item6: {
-          img: require("../../../assets/images/common/thum_sticker_5.png"),
-          alt: '롤 스티커',
-          term: '롤 스티커',
+          img: require("../../../assets/images/common/thum_name_6.png"),
+          alt: '플라스틱 명함',
+          term: '플라스틱 명함',
           only: true
         },
         item7: {
-          img: require("../../../assets/images/common/thum_sticker_6.png"),
-          alt: '떡 메모지',
-          term: '떡 메모지',
+          img: require("../../../assets/images/common/thum_name_7.png"),
+          alt: '하이브리드 명함',
+          term: '하이브리드 명함',
+          only: true
+        },
+        item8: {
+          img: require("../../../assets/images/common/thum_name_8.png"),
+          alt: '카드 명함',
+          term: '카드 명함',
           only: true
         },
       },
